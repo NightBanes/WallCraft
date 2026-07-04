@@ -8,17 +8,21 @@ import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import java.util.concurrent.CompletableFuture;
 
-public class WallCraftBlockTagProvider extends BlockTagsProvider {
-    public WallCraftBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+public class ModBlockTagProvider extends BlockTagsProvider {
+    public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider, Constants.MOD_ID);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.EXAMPLE_BLOCK.block().key());
+                .add(ModBlocks.EXAMPLE_BLOCK.block().key())
+                .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.EXAMPLE_BLOCK.block().key());
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key());
     }
 }

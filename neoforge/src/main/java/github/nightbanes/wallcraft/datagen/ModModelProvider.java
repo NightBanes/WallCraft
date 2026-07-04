@@ -8,9 +8,11 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Blocks;
 
-public class WallCraftModelProvider extends ModelProvider {
-    public WallCraftModelProvider(PackOutput output) {
+
+public class ModModelProvider extends ModelProvider {
+    public ModModelProvider(PackOutput output) {
         super(output, Constants.MOD_ID);
     }
 
@@ -21,5 +23,10 @@ public class WallCraftModelProvider extends ModelProvider {
 
         // Add blocks to generate json for
         blockModels.createTrivialCube(ModBlocks.EXAMPLE_BLOCK.block().get());
+
+        blockModels.family(Blocks.SMOOTH_SANDSTONE)
+                .wall(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get());
+
     }
+
 }

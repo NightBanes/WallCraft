@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class WallCraftLootTableProvider extends LootTableProvider {
-    public WallCraftLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+public class ModLootTableProvider extends LootTableProvider {
+    public ModLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(
                 output,
                 Set.of(),
@@ -35,6 +35,7 @@ public class WallCraftLootTableProvider extends LootTableProvider {
         protected void generate() {
             // Add item drops
             dropSelf(ModBlocks.EXAMPLE_BLOCK.block().get());
+            dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get());
         }
 
         @Override
