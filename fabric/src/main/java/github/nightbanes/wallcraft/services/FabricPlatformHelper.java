@@ -1,6 +1,6 @@
-package github.nightbanes.wallcraft.platform;
+package github.nightbanes.wallcraft.services;
 
-import github.nightbanes.wallcraft.platform.services.IPlatformHelper;
+import github.nightbanes.wallcraft.services.types.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {

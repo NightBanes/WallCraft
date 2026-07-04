@@ -1,6 +1,7 @@
 package github.nightbanes.wallcraft;
 
-import github.nightbanes.wallcraft.platform.Services;
+import github.nightbanes.wallcraft.init.ModItems;
+import github.nightbanes.wallcraft.services.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
 
@@ -27,5 +28,7 @@ public class CommonClass {
 
             Constants.LOG.info("Hello to wallcraft");
         }
+
+        ModItems.load();
     }
 }

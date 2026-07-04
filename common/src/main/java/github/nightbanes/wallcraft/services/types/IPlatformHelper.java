@@ -1,4 +1,4 @@
-package github.nightbanes.wallcraft.platform.services;
+package github.nightbanes.wallcraft.services.types;
 
 public interface IPlatformHelper {
 

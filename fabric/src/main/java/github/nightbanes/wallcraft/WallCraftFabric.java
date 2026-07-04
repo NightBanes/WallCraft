@@ -2,7 +2,7 @@ package github.nightbanes.wallcraft;
 
 import net.fabricmc.api.ModInitializer;
 
-public class WallCraft implements ModInitializer {
+public class WallCraftFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {

@@ -12,7 +12,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "github.nightbanes.wallcraft.WallCraft"
+            "github.nightbanes.wallcraft.WallCraftFabric"
         ]
     },
     "depends": {

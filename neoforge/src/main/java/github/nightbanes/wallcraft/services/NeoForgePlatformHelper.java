@@ -1,6 +1,6 @@
-package github.nightbanes.wallcraft.platform;
+package github.nightbanes.wallcraft.services;
 
-import github.nightbanes.wallcraft.platform.services.IPlatformHelper;
+import github.nightbanes.wallcraft.services.types.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 
