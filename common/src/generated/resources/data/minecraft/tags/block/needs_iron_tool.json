@@ -1,5 +1,9 @@
 {
   "values": [
+<<<<<<< HEAD
     "examplemod:example_block"
+=======
+    "wallcraft:example_block"
+>>>>>>> parent of 7081b1a (Renamed to ExampleMod)
   ]
 }
