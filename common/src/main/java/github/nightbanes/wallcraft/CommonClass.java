@@ -1,6 +1,7 @@
 package github.nightbanes.wallcraft;
 
 import github.nightbanes.wallcraft.init.ModBlocks;
+import github.nightbanes.wallcraft.init.ModCreativeTabs;
 import github.nightbanes.wallcraft.init.ModItems;
 import github.nightbanes.wallcraft.services.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -32,5 +33,6 @@ public class CommonClass {
 
         ModItems.load();
         ModBlocks.load();
+        ModCreativeTabs.load();
     }
 }

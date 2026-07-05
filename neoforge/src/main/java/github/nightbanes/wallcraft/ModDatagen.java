@@ -1,9 +1,6 @@
 package github.nightbanes.wallcraft;
 
-import github.nightbanes.wallcraft.datagen.ModBlockTagProvider;
-import github.nightbanes.wallcraft.datagen.ModEnglishLanguageProvider;
-import github.nightbanes.wallcraft.datagen.ModLootTableProvider;
-import github.nightbanes.wallcraft.datagen.ModModelProvider;
+import github.nightbanes.wallcraft.datagen.*;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 public final class ModDatagen {

@@ -34,8 +34,26 @@ public class ModLootTableProvider extends LootTableProvider {
         @Override
         protected void generate() {
             // Add item drops
-            dropSelf(ModBlocks.EXAMPLE_BLOCK.block().get());
+            dropSelf(ModBlocks.OAK_LOG_WALL.block().get());
+            //dropSelf(ModBlocks.OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.OAK_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.SPRUCE_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.BIRCH_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.JUNGLE_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.ACACIA_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.DARK_OAK_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.MANGROVE_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.CHERRY_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.PALE_OAK_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.BAMBOO_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.CRIMSON_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.WARPED_PLANK_WALL.block().get());
+            dropSelf(ModBlocks.STONE_WALL.block().get());
+            dropSelf(ModBlocks.POLISHED_GRANITE_WALL.block().get());
+            dropSelf(ModBlocks.POLISHED_DIORITE_WALL.block().get());
+            dropSelf(ModBlocks.POLISHED_ANDESITE_WALL.block().get());
             dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get());
+            dropSelf(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get());
         }
 
         @Override

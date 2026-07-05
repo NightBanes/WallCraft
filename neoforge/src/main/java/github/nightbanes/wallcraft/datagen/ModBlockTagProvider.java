@@ -15,14 +15,50 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.EXAMPLE_BLOCK.block().key())
-                .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key());
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.OAK_LOG_WALL.block().key())
+                //.add(ModBlocks.OAK_WOOD_WALL.block().key())
+                .add(ModBlocks.OAK_PLANK_WALL.block().key())
+                .add(ModBlocks.SPRUCE_PLANK_WALL.block().key())
+                .add(ModBlocks.BIRCH_PLANK_WALL.block().key())
+                .add(ModBlocks.JUNGLE_PLANK_WALL.block().key())
+                .add(ModBlocks.ACACIA_PLANK_WALL.block().key())
+                .add(ModBlocks.DARK_OAK_PLANK_WALL.block().key())
+                .add(ModBlocks.MANGROVE_PLANK_WALL.block().key())
+                .add(ModBlocks.CHERRY_PLANK_WALL.block().key())
+                .add(ModBlocks.PALE_OAK_PLANK_WALL.block().key())
+                .add(ModBlocks.BAMBOO_PLANK_WALL.block().key())
+                .add(ModBlocks.CRIMSON_PLANK_WALL.block().key())
+                .add(ModBlocks.WARPED_PLANK_WALL.block().key());
 
-        tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.EXAMPLE_BLOCK.block().key());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.STONE_WALL.block().key())
+                .add(ModBlocks.POLISHED_GRANITE_WALL.block().key())
+                .add(ModBlocks.POLISHED_DIORITE_WALL.block().key())
+                .add(ModBlocks.POLISHED_ANDESITE_WALL.block().key())
+                .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key())
+                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
 
         tag(BlockTags.WALLS)
-                .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key());
+                .add(ModBlocks.OAK_LOG_WALL.block().key())
+                //.add(ModBlocks.OAK_WOOD_WALL.block().key())
+                .add(ModBlocks.OAK_PLANK_WALL.block().key())
+                .add(ModBlocks.SPRUCE_PLANK_WALL.block().key())
+                .add(ModBlocks.BIRCH_PLANK_WALL.block().key())
+                .add(ModBlocks.JUNGLE_PLANK_WALL.block().key())
+                .add(ModBlocks.ACACIA_PLANK_WALL.block().key())
+                .add(ModBlocks.DARK_OAK_PLANK_WALL.block().key())
+                .add(ModBlocks.MANGROVE_PLANK_WALL.block().key())
+                .add(ModBlocks.CHERRY_PLANK_WALL.block().key())
+                .add(ModBlocks.PALE_OAK_PLANK_WALL.block().key())
+                .add(ModBlocks.BAMBOO_PLANK_WALL.block().key())
+                .add(ModBlocks.CRIMSON_PLANK_WALL.block().key())
+                .add(ModBlocks.WARPED_PLANK_WALL.block().key())
+                .add(ModBlocks.STONE_WALL.block().key())
+                .add(ModBlocks.POLISHED_GRANITE_WALL.block().key())
+                .add(ModBlocks.POLISHED_DIORITE_WALL.block().key())
+                .add(ModBlocks.POLISHED_ANDESITE_WALL.block().key())
+                .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key())
+                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
     }
 }

@@ -1,6 +1,10 @@
 {
   "values": [
-    "wallcraft:example_block",
-    "wallcraft:smooth_sandstone_wall"
+    "wallcraft:stone_wall",
+    "wallcraft:polished_granite_wall",
+    "wallcraft:polished_diorite_wall",
+    "wallcraft:polished_andesite_wall",
+    "wallcraft:smooth_sandstone_wall",
+    "wallcraft:smooth_red_sandstone_wall"
   ]
 }

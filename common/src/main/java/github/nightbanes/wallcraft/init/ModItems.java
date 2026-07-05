@@ -9,6 +9,6 @@ public final class ModItems {
 
     public static void load() {}
 
-    public static final RegistryHandle<Item> EXAMPLE_ITEM = Services.REGISTRY.registerItem("example_item",
-            properties -> new Item(properties));
+    //public static final RegistryHandle<Item> EXAMPLE_ITEM = Services.REGISTRY.registerItem("example_item",
+    //        properties -> new Item(properties));
 }
