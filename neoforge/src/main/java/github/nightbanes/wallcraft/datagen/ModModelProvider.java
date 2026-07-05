@@ -1,11 +1,13 @@
 package github.nightbanes.wallcraft.datagen;
 
 import github.nightbanes.wallcraft.Constants;
+import github.nightbanes.wallcraft.init.LogWallGenerator;
 import github.nightbanes.wallcraft.init.ModBlocks;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Blocks;
 
 
@@ -21,8 +23,12 @@ public class ModModelProvider extends ModelProvider {
 
         // Add blocks to generate json for
 
-        //blockModels.createNonTemplateModelBlock(ModBlocks.OAK_LOG_WALL.block().get());
-        blockModels.family(Blocks.OAK_LOG).wall(ModBlocks.OAK_LOG_WALL.block().get());
+        LogWallGenerator.createLogWall(
+                blockModels,
+                ModBlocks.OAK_LOG_WALL.block().get(),
+                Identifier.withDefaultNamespace("block/oak_log"),
+                Identifier.withDefaultNamespace("block/oak_log_top")
+        );
         //blockModels.family(Blocks.OAK_LOG).wall(ModBlocks.OAK_WOOD_WALL.block().get());
 
         blockModels.family(Blocks.OAK_PLANKS).wall(ModBlocks.OAK_PLANK_WALL.block().get());
