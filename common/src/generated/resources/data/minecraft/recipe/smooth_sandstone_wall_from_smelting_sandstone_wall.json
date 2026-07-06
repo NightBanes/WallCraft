@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "sandstone_wall",
+  "ingredient": "minecraft:sandstone_wall",
+  "result": {
+    "id": "wallcraft:smooth_sandstone_wall"
+  }
+}

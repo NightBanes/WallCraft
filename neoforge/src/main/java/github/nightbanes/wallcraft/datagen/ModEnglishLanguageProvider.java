@@ -4,9 +4,11 @@ import github.nightbanes.wallcraft.Constants;
 import github.nightbanes.wallcraft.init.ModBlocks;
 import github.nightbanes.wallcraft.init.ModCreativeTabs;
 import github.nightbanes.wallcraft.init.ModItems;
+import github.nightbanes.wallcraft.services.util.BlockItemRegistryHandle;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.contents.TranslatableContents;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 
 public class ModEnglishLanguageProvider extends LanguageProvider {
@@ -19,73 +21,44 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         // Add translations
         add(ModCreativeTabs.WALLCRAFT_TAB.get().getDisplayName(), "WallCraft");
 
-        //add(ModItems.EXAMPLE_ITEM.get(), "Example Item");
+        // Log walls
+        addBlockAndItem(ModBlocks.OAK_LOG_WALL, "Oak Log Wall");
 
-        add(ModBlocks.OAK_LOG_WALL.block().get(), "Oak Log Wall");
-        add(ModBlocks.OAK_LOG_WALL.item().get(), "Oak Log Wall");
+        // Wood walls
+        addBlockAndItem(ModBlocks.OAK_WOOD_WALL, "Oak Wood Wall");
 
-        //add(ModBlocks.OAK_WOOD_WALL.block().get(), "Oak Wood Wall");
-        //add(ModBlocks.OAK_WOOD_WALL.item().get(), "Oak Wood Wall");
+        // Plank walls
+        addBlockAndItem(ModBlocks.OAK_PLANK_WALL, "Oak Plank Wall");
+        addBlockAndItem(ModBlocks.SPRUCE_PLANK_WALL, "Spruce Plank Wall");
+        addBlockAndItem(ModBlocks.BIRCH_PLANK_WALL, "Birch Plank Wall");
+        addBlockAndItem(ModBlocks.JUNGLE_PLANK_WALL, "Jungle Plank Wall");
+        addBlockAndItem(ModBlocks.ACACIA_PLANK_WALL, "Acacia Plank Wall");
+        addBlockAndItem(ModBlocks.DARK_OAK_PLANK_WALL, "Dark Oak Plank Wall");
+        addBlockAndItem(ModBlocks.MANGROVE_PLANK_WALL, "Mangrove Plank Wall");
+        addBlockAndItem(ModBlocks.CHERRY_PLANK_WALL, "Cherry Plank Wall");
+        addBlockAndItem(ModBlocks.PALE_OAK_PLANK_WALL, "Pale Oak Plank Wall");
+        addBlockAndItem(ModBlocks.BAMBOO_PLANK_WALL, "Bamboo Plank Wall");
+        addBlockAndItem(ModBlocks.CRIMSON_PLANK_WALL, "Crimson Plank Wall");
+        addBlockAndItem(ModBlocks.WARPED_PLANK_WALL, "Warped Plank Wall");
 
-        add(ModBlocks.OAK_PLANK_WALL.block().get(), "Oak Plank Wall");
-        add(ModBlocks.OAK_PLANK_WALL.item().get(), "Oak Plank Wall");
-
-        add(ModBlocks.SPRUCE_PLANK_WALL.block().get(), "Spruce Plank Wall");
-        add(ModBlocks.SPRUCE_PLANK_WALL.item().get(), "Spruce Plank Wall");
-
-        add(ModBlocks.BIRCH_PLANK_WALL.block().get(), "Birch Plank Wall");
-        add(ModBlocks.BIRCH_PLANK_WALL.item().get(), "Birch Plank Wall");
-
-        add(ModBlocks.JUNGLE_PLANK_WALL.block().get(), "Jungle Plank Wall");
-        add(ModBlocks.JUNGLE_PLANK_WALL.item().get(), "Jungle Plank Wall");
-
-        add(ModBlocks.ACACIA_PLANK_WALL.block().get(), "Acacia Plank Wall");
-        add(ModBlocks.ACACIA_PLANK_WALL.item().get(), "Acacia Plank Wall");
-
-        add(ModBlocks.DARK_OAK_PLANK_WALL.block().get(), "Dark Oak Plank Wall");
-        add(ModBlocks.DARK_OAK_PLANK_WALL.item().get(), "Dark Oak Plank Wall");
-
-        add(ModBlocks.MANGROVE_PLANK_WALL.block().get(), "Mangrove Plank Wall");
-        add(ModBlocks.MANGROVE_PLANK_WALL.item().get(), "Mangrove Plank Wall");
-
-        add(ModBlocks.CHERRY_PLANK_WALL.block().get(), "Cherry Plank Wall");
-        add(ModBlocks.CHERRY_PLANK_WALL.item().get(), "Cherry Plank Wall");
-
-        add(ModBlocks.PALE_OAK_PLANK_WALL.block().get(), "Pale Oak Plank Wall");
-        add(ModBlocks.PALE_OAK_PLANK_WALL.item().get(), "Pale Oak Plank Wall");
-
-        add(ModBlocks.BAMBOO_PLANK_WALL.block().get(), "Bamboo Plank Wall");
-        add(ModBlocks.BAMBOO_PLANK_WALL.item().get(), "Bamboo Plank Wall");
-
-        add(ModBlocks.CRIMSON_PLANK_WALL.block().get(), "Crimson Plank Wall");
-        add(ModBlocks.CRIMSON_PLANK_WALL.item().get(), "Crimson Plank Wall");
-
-        add(ModBlocks.WARPED_PLANK_WALL.block().get(), "Warped Plank Wall");
-        add(ModBlocks.WARPED_PLANK_WALL.item().get(), "Warped Plank Wall");
-
-        add(ModBlocks.STONE_WALL.block().get(), "Stone Wall");
-        add(ModBlocks.STONE_WALL.item().get(), "Stone Wall");
-
-        add(ModBlocks.POLISHED_GRANITE_WALL.block().get(), "Polished Granite Wall");
-        add(ModBlocks.POLISHED_GRANITE_WALL.item().get(), "Polished Granite Wall");
-
-        add(ModBlocks.POLISHED_DIORITE_WALL.block().get(), "Polished Diorite Wall");
-        add(ModBlocks.POLISHED_DIORITE_WALL.item().get(), "Polished Diorite Wall");
-
-        add(ModBlocks.POLISHED_ANDESITE_WALL.block().get(), "Polished Andesite Wall");
-        add(ModBlocks.POLISHED_ANDESITE_WALL.item().get(), "Polished Andesite Wall");
-
-        add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get(), "Smooth Sandstone Wall");
-        add(ModBlocks.SMOOTH_SANDSTONE_WALL.item().get(), "Smooth Sandstone Wall");
-
-        add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get(), "Smooth Red Sandstone Wall");
-        add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.item().get(), "Smooth Red Sandstone Wall");
+        // Stone-like walls
+        addBlockAndItem(ModBlocks.STONE_WALL, "Stone Wall");
+        addBlockAndItem(ModBlocks.POLISHED_GRANITE_WALL, "Polished Granite Wall");
+        addBlockAndItem(ModBlocks.POLISHED_DIORITE_WALL, "Polished Diorite Wall");
+        addBlockAndItem(ModBlocks.POLISHED_ANDESITE_WALL, "Polished Andesite Wall");
+        addBlockAndItem(ModBlocks.SMOOTH_SANDSTONE_WALL, "Smooth Sandstone Wall");
+        addBlockAndItem(ModBlocks.SMOOTH_RED_SANDSTONE_WALL, "Smooth Red Sandstone Wall");
     }
 
     private void add(Component component, String value) {
         if(component.getContents() instanceof TranslatableContents translatableContents) {
             add(translatableContents.getKey(), value);
         }
+    }
+
+    private void addBlockAndItem(BlockItemRegistryHandle<Block> blockItem, String name) {
+        add(blockItem.block().get(), name);
+        add(blockItem.item().get(), name);
     }
 
 }

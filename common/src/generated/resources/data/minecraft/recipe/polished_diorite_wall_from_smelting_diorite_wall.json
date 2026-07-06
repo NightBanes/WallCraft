@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "diorite_wall",
+  "ingredient": "minecraft:diorite_wall",
+  "result": {
+    "id": "wallcraft:polished_diorite_wall"
+  }
+}

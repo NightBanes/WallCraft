@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "wallcraft:oak_wood_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:oak_plank_wall"
+  }
+}

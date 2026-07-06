@@ -16,8 +16,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_AXE)
+                // Log walls
                 .add(ModBlocks.OAK_LOG_WALL.block().key())
-                //.add(ModBlocks.OAK_WOOD_WALL.block().key())
+
+                // Wood walls
+                .add(ModBlocks.OAK_WOOD_WALL.block().key())
+
+                // Plank walls
                 .add(ModBlocks.OAK_PLANK_WALL.block().key())
                 .add(ModBlocks.SPRUCE_PLANK_WALL.block().key())
                 .add(ModBlocks.BIRCH_PLANK_WALL.block().key())
@@ -32,6 +37,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.WARPED_PLANK_WALL.block().key());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                // Stone-like walls
                 .add(ModBlocks.STONE_WALL.block().key())
                 .add(ModBlocks.POLISHED_GRANITE_WALL.block().key())
                 .add(ModBlocks.POLISHED_DIORITE_WALL.block().key())
@@ -40,8 +46,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
 
         tag(BlockTags.WALLS)
+                // Log walls
                 .add(ModBlocks.OAK_LOG_WALL.block().key())
-                //.add(ModBlocks.OAK_WOOD_WALL.block().key())
+
+                // Wood walls
+                .add(ModBlocks.OAK_WOOD_WALL.block().key())
+
+                // Plank walls
                 .add(ModBlocks.OAK_PLANK_WALL.block().key())
                 .add(ModBlocks.SPRUCE_PLANK_WALL.block().key())
                 .add(ModBlocks.BIRCH_PLANK_WALL.block().key())
@@ -54,6 +65,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BAMBOO_PLANK_WALL.block().key())
                 .add(ModBlocks.CRIMSON_PLANK_WALL.block().key())
                 .add(ModBlocks.WARPED_PLANK_WALL.block().key())
+
+                // Stone-like walls
                 .add(ModBlocks.STONE_WALL.block().key())
                 .add(ModBlocks.POLISHED_GRANITE_WALL.block().key())
                 .add(ModBlocks.POLISHED_DIORITE_WALL.block().key())

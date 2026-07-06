@@ -33,9 +33,13 @@ public class ModLootTableProvider extends LootTableProvider {
 
         @Override
         protected void generate() {
-            // Add item drops
+            // Log walls
             dropSelf(ModBlocks.OAK_LOG_WALL.block().get());
-            //dropSelf(ModBlocks.OAK_WOOD_WALL.block().get());
+
+            // Wood walls
+            dropSelf(ModBlocks.OAK_WOOD_WALL.block().get());
+
+            // Plank walls
             dropSelf(ModBlocks.OAK_PLANK_WALL.block().get());
             dropSelf(ModBlocks.SPRUCE_PLANK_WALL.block().get());
             dropSelf(ModBlocks.BIRCH_PLANK_WALL.block().get());
@@ -48,6 +52,8 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.BAMBOO_PLANK_WALL.block().get());
             dropSelf(ModBlocks.CRIMSON_PLANK_WALL.block().get());
             dropSelf(ModBlocks.WARPED_PLANK_WALL.block().get());
+
+            // Stone-like walls
             dropSelf(ModBlocks.STONE_WALL.block().get());
             dropSelf(ModBlocks.POLISHED_GRANITE_WALL.block().get());
             dropSelf(ModBlocks.POLISHED_DIORITE_WALL.block().get());
@@ -64,6 +70,5 @@ public class ModLootTableProvider extends LootTableProvider {
                     .toList();
         }
     }
-
 
 }

@@ -10,40 +10,64 @@ final public class ModBlocks {
 
     public static void load() {}
 
-    //public static final BlockItemRegistryHandle<Block> EXAMPLE_BLOCK = Services.REGISTRY.registerBlockItem("example_block",
-    //        properties -> new Block(properties.strength(3.0F, 15.0F).requiresCorrectToolForDrops()));
-
+    // Oak walls
     public static final BlockItemRegistryHandle<Block> OAK_LOG_WALL = Services.REGISTRY.registerBlockItem("oak_log_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
-    //public static final BlockItemRegistryHandle<Block> OAK_WOOD_WALL = Services.REGISTRY.registerBlockItem("oak_wood_wall",
-    //        properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
-
+            properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
+    public static final BlockItemRegistryHandle<Block> OAK_WOOD_WALL = Services.REGISTRY.registerBlockItem("oak_wood_wall",
+            properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
+    //stripped log
+    //stripped wood
     public static final BlockItemRegistryHandle<Block> OAK_PLANK_WALL = Services.REGISTRY.registerBlockItem("oak_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Spruce walls
     public static final BlockItemRegistryHandle<Block> SPRUCE_PLANK_WALL = Services.REGISTRY.registerBlockItem("spruce_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Birch walls
     public static final BlockItemRegistryHandle<Block> BIRCH_PLANK_WALL = Services.REGISTRY.registerBlockItem("birch_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Jungle walls
     public static final BlockItemRegistryHandle<Block> JUNGLE_PLANK_WALL = Services.REGISTRY.registerBlockItem("jungle_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Acacia walls
     public static final BlockItemRegistryHandle<Block> ACACIA_PLANK_WALL = Services.REGISTRY.registerBlockItem("acacia_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Dark Oak walls
     public static final BlockItemRegistryHandle<Block> DARK_OAK_PLANK_WALL = Services.REGISTRY.registerBlockItem("dark_oak_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Mangrove walls
     public static final BlockItemRegistryHandle<Block> MANGROVE_PLANK_WALL = Services.REGISTRY.registerBlockItem("mangrove_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Cherry walls
     public static final BlockItemRegistryHandle<Block> CHERRY_PLANK_WALL = Services.REGISTRY.registerBlockItem("cherry_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Pale Oak walls
     public static final BlockItemRegistryHandle<Block> PALE_OAK_PLANK_WALL = Services.REGISTRY.registerBlockItem("pale_oak_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Bamboo walls
+    //stripped bamboo
+    //bamboo mosaic
     public static final BlockItemRegistryHandle<Block> BAMBOO_PLANK_WALL = Services.REGISTRY.registerBlockItem("bamboo_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Crimson walls
     public static final BlockItemRegistryHandle<Block> CRIMSON_PLANK_WALL = Services.REGISTRY.registerBlockItem("crimson_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    // Warped walls
     public static final BlockItemRegistryHandle<Block> WARPED_PLANK_WALL = Services.REGISTRY.registerBlockItem("warped_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
 
 
+    // Stone-like walls
     public static final BlockItemRegistryHandle<Block> STONE_WALL = Services.REGISTRY.registerBlockItem("stone_wall",
             properties -> new WallBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
     public static final BlockItemRegistryHandle<Block> POLISHED_GRANITE_WALL = Services.REGISTRY.registerBlockItem("polished_granite_wall",

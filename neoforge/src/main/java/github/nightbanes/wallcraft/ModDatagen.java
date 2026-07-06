@@ -11,6 +11,7 @@ public final class ModDatagen {
         event.createProvider(ModEnglishLanguageProvider::new);
         event.createProvider(ModBlockTagProvider::new);
         event.createProvider(ModLootTableProvider::new);
+        event.createProvider(ModRecipeProvider.Runner::new);
     }
 
 }
