@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "birch_plank_wall",
   "key": {
     "#": "minecraft:birch_planks"
   },

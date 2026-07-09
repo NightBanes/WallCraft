@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "polished_andesite_wall",
   "key": {
     "#": "minecraft:polished_andesite"
   },

@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
+  "group": "oak_plank_wall",
   "ingredients": [
-    "wallcraft:oak_log_wall"
+    "wallcraft:oak_wood_wall"
   ],
   "result": {
     "count": 4,

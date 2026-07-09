@@ -9,7 +9,6 @@ public final class ModDatagen {
     public static void onGatherClientData(GatherDataEvent.Client event) {
         event.createProvider(ModModelProvider::new);
         event.createProvider(ModEnglishLanguageProvider::new);
-        event.createProvider(ModDataMapProvider::new);
         event.createProvider(ModBlockTagProvider::new);
         event.createProvider(ModLootTableProvider::new);
         event.createProvider(ModRecipeProvider.Runner::new);

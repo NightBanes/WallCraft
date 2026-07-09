@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "oak_plank_wall",
   "key": {
     "#": "minecraft:oak_planks"
   },

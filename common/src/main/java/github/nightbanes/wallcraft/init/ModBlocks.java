@@ -1,5 +1,6 @@
 package github.nightbanes.wallcraft.init;
 
+import github.nightbanes.wallcraft.block.StrippableWallBlock;
 import github.nightbanes.wallcraft.services.Services;
 import github.nightbanes.wallcraft.services.util.BlockItemRegistryHandle;
 import net.minecraft.world.level.block.Block;
@@ -12,9 +13,9 @@ final public class ModBlocks {
 
     // Oak walls
     public static final BlockItemRegistryHandle<Block> OAK_LOG_WALL = Services.REGISTRY.registerBlockItem("oak_log_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
+            properties -> new StrippableWallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops(), ModBlocks::getStrippedOakLogWall));
     public static final BlockItemRegistryHandle<Block> OAK_WOOD_WALL = Services.REGISTRY.registerBlockItem("oak_wood_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
+            properties -> new StrippableWallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops(), ModBlocks::getStrippedOakWoodWall));
     public static final BlockItemRegistryHandle<Block> STRIPPED_OAK_LOG_WALL = Services.REGISTRY.registerBlockItem("stripped_oak_log_wall",
             properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
     public static final BlockItemRegistryHandle<Block> STRIPPED_OAK_WOOD_WALL = Services.REGISTRY.registerBlockItem("stripped_oak_wood_wall",
@@ -99,5 +100,13 @@ final public class ModBlocks {
 
     // Cut Copper
     */
+
+    private static Block getStrippedOakLogWall() {
+        return STRIPPED_OAK_LOG_WALL.block().get();
+    }
+
+    private static Block getStrippedOakWoodWall() {
+        return STRIPPED_OAK_WOOD_WALL.block().get();
+    }
 
 }

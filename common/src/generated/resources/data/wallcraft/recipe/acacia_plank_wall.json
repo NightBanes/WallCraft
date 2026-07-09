@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "acacia_plank_wall",
   "key": {
     "#": "minecraft:acacia_planks"
   },

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_input": {
+    "has_oak_log_wall": {
       "conditions": {
         "items": [
           {
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "wallcraft:oak_wood_wall_from_log_wall"
+        "recipe": "wallcraft:oak_wood_wall_from_oak_log_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_input"
+      "has_oak_log_wall"
     ]
   ],
   "rewards": {
     "recipes": [
-      "wallcraft:oak_wood_wall_from_log_wall"
+      "wallcraft:oak_wood_wall_from_oak_log_wall"
     ]
   }
 }

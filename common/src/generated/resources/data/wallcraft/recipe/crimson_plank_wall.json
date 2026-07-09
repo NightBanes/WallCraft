@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "crimson_plank_wall",
   "key": {
     "#": "minecraft:crimson_planks"
   },

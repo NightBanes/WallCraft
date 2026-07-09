@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "cherry_plank_wall",
   "key": {
     "#": "minecraft:cherry_planks"
   },

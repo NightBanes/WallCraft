@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "wallcraft:oak_wood_wall"
+            "items": "wallcraft:oak_log_wall"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "wallcraft:oak_plank_wall_from_wood_wall"
+        "recipe": "wallcraft:oak_plank_wall_from_oak_log_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "wallcraft:oak_plank_wall_from_wood_wall"
+      "wallcraft:oak_plank_wall_from_oak_log_wall"
     ]
   }
 }

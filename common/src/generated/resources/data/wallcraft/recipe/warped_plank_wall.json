@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "warped_plank_wall",
   "key": {
     "#": "minecraft:warped_planks"
   },
