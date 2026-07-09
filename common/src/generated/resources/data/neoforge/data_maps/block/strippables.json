@@ -1,0 +1,10 @@
+{
+  "values": {
+    "wallcraft:oak_log_wall": {
+      "stripped_block": "wallcraft:stripped_oak_log_wall"
+    },
+    "wallcraft:oak_wood_wall": {
+      "stripped_block": "wallcraft:stripped_oak_wood_wall"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 package github.nightbanes.wallcraft;
 
+import github.nightbanes.wallcraft.init.ModBlocks;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 
 public class WallCraftFabric implements ModInitializer {
 
@@ -13,5 +15,17 @@ public class WallCraftFabric implements ModInitializer {
         // Use Fabric to bootstrap the Common mod.
         Constants.LOG.info("Hello Fabric world!");
         CommonClass.init();
+        registerStrippables();
+    }
+
+    private static void registerStrippables() {
+        StrippableBlockRegistry.registerCopyState(
+                ModBlocks.OAK_LOG_WALL.block().get(),
+                ModBlocks.STRIPPED_OAK_LOG_WALL.block().get()
+        );
+        StrippableBlockRegistry.registerCopyState(
+                ModBlocks.OAK_WOOD_WALL.block().get(),
+                ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get()
+        );
     }
 }

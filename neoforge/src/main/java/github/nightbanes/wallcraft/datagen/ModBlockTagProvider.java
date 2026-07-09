@@ -22,6 +22,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 // Wood walls
                 .add(ModBlocks.OAK_WOOD_WALL.block().key())
 
+                // Stripped Log walls
+                .add(ModBlocks.STRIPPED_OAK_LOG_WALL.block().key())
+
+                // Stripped Wood walls
+                .add(ModBlocks.STRIPPED_OAK_WOOD_WALL.block().key())
+
                 // Plank walls
                 .add(ModBlocks.OAK_PLANK_WALL.block().key())
                 .add(ModBlocks.SPRUCE_PLANK_WALL.block().key())
@@ -51,6 +57,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                 // Wood walls
                 .add(ModBlocks.OAK_WOOD_WALL.block().key())
+
+                // Stripped Log walls
+                .add(ModBlocks.STRIPPED_OAK_LOG_WALL.block().key())
+
+                // Stripped Wood walls
+                .add(ModBlocks.STRIPPED_OAK_WOOD_WALL.block().key())
 
                 // Plank walls
                 .add(ModBlocks.OAK_PLANK_WALL.block().key())

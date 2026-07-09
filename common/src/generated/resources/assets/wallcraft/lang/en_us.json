@@ -18,6 +18,8 @@
   "block.wallcraft.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "block.wallcraft.spruce_plank_wall": "Spruce Plank Wall",
   "block.wallcraft.stone_wall": "Stone Wall",
+  "block.wallcraft.stripped_oak_log_wall": "Stripped Oak Log Wall",
+  "block.wallcraft.stripped_oak_wood_wall": "Stripped Oak Wood Wall",
   "block.wallcraft.warped_plank_wall": "Warped Plank Wall",
   "item.wallcraft.acacia_plank_wall": "Acacia Plank Wall",
   "item.wallcraft.bamboo_plank_wall": "Bamboo Plank Wall",
@@ -38,6 +40,8 @@
   "item.wallcraft.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "item.wallcraft.spruce_plank_wall": "Spruce Plank Wall",
   "item.wallcraft.stone_wall": "Stone Wall",
+  "item.wallcraft.stripped_oak_log_wall": "Stripped Oak Log Wall",
+  "item.wallcraft.stripped_oak_wood_wall": "Stripped Oak Wood Wall",
   "item.wallcraft.warped_plank_wall": "Warped Plank Wall",
   "itemGroup.wallcraftwallcraft_tab": "WallCraft"
 }

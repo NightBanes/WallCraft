@@ -39,6 +39,12 @@ public class ModLootTableProvider extends LootTableProvider {
             // Wood walls
             dropSelf(ModBlocks.OAK_WOOD_WALL.block().get());
 
+            // Stripped Log walls
+            dropSelf(ModBlocks.STRIPPED_OAK_LOG_WALL.block().get());
+
+            // Stripped Wood walls
+            dropSelf(ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get());
+
             // Plank walls
             dropSelf(ModBlocks.OAK_PLANK_WALL.block().get());
             dropSelf(ModBlocks.SPRUCE_PLANK_WALL.block().get());

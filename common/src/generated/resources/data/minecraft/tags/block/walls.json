@@ -2,6 +2,8 @@
   "values": [
     "wallcraft:oak_log_wall",
     "wallcraft:oak_wood_wall",
+    "wallcraft:stripped_oak_log_wall",
+    "wallcraft:stripped_oak_wood_wall",
     "wallcraft:oak_plank_wall",
     "wallcraft:spruce_plank_wall",
     "wallcraft:birch_plank_wall",

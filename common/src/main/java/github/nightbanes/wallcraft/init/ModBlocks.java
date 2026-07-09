@@ -15,8 +15,10 @@ final public class ModBlocks {
             properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
     public static final BlockItemRegistryHandle<Block> OAK_WOOD_WALL = Services.REGISTRY.registerBlockItem("oak_wood_wall",
             properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
-    //stripped log
-    //stripped wood
+    public static final BlockItemRegistryHandle<Block> STRIPPED_OAK_LOG_WALL = Services.REGISTRY.registerBlockItem("stripped_oak_log_wall",
+            properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
+    public static final BlockItemRegistryHandle<Block> STRIPPED_OAK_WOOD_WALL = Services.REGISTRY.registerBlockItem("stripped_oak_wood_wall",
+            properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
     public static final BlockItemRegistryHandle<Block> OAK_PLANK_WALL = Services.REGISTRY.registerBlockItem("oak_plank_wall",
             properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
 

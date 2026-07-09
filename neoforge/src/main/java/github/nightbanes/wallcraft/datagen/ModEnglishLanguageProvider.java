@@ -27,6 +27,12 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         // Wood walls
         addBlockAndItem(ModBlocks.OAK_WOOD_WALL, "Oak Wood Wall");
 
+        // Stripped Log walls
+        addBlockAndItem(ModBlocks.STRIPPED_OAK_LOG_WALL, "Stripped Oak Log Wall");
+
+        // Wood walls
+        addBlockAndItem(ModBlocks.STRIPPED_OAK_WOOD_WALL, "Stripped Oak Wood Wall");
+
         // Plank walls
         addBlockAndItem(ModBlocks.OAK_PLANK_WALL, "Oak Plank Wall");
         addBlockAndItem(ModBlocks.SPRUCE_PLANK_WALL, "Spruce Plank Wall");

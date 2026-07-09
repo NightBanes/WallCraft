@@ -28,6 +28,12 @@ public class ModModelProvider extends ModelProvider {
         // Wood walls
         ModWallGenerator.createWall(blockModels, Blocks.OAK_LOG, ModBlocks.OAK_WOOD_WALL.block().get());
 
+        // Stripped Log walls
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_OAK_LOG, ModBlocks.STRIPPED_OAK_LOG_WALL.block().get());
+
+        // Stripped Wood walls
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_OAK_LOG, ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get());
+
         // Plank walls
         ModWallGenerator.createWall(blockModels, Blocks.OAK_PLANKS, ModBlocks.OAK_PLANK_WALL.block().get());
         ModWallGenerator.createWall(blockModels, Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_PLANK_WALL.block().get());
