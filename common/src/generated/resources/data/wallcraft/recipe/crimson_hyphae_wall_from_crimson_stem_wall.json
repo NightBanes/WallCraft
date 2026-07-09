@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "crimson_hyphae_wall",
+  "key": {
+    "#": "wallcraft:crimson_stem_wall"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "wallcraft:crimson_hyphae_wall"
+  }
+}

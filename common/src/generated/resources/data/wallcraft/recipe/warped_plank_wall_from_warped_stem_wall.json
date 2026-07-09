@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "warped_plank_wall",
+  "ingredients": [
+    "wallcraft:warped_stem_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:warped_plank_wall"
+  }
+}

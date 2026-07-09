@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "dark_oak_log_wall",
+  "key": {
+    "#": "minecraft:dark_oak_log"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "wallcraft:dark_oak_log_wall"
+  }
+}

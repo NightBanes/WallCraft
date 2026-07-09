@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "cherry_wood_wall",
+  "key": {
+    "#": "wallcraft:cherry_log_wall"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "wallcraft:cherry_wood_wall"
+  }
+}

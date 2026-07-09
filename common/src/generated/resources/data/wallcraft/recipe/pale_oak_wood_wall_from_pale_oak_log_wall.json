@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pale_oak_wood_wall",
+  "key": {
+    "#": "wallcraft:pale_oak_log_wall"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "wallcraft:pale_oak_wood_wall"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "jungle_plank_wall",
+  "ingredients": [
+    "wallcraft:jungle_log_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:jungle_plank_wall"
+  }
+}

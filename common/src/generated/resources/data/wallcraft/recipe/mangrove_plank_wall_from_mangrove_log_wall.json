@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mangrove_plank_wall",
+  "ingredients": [
+    "wallcraft:mangrove_log_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:mangrove_plank_wall"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "birch_log_wall",
+  "key": {
+    "#": "minecraft:birch_log"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "wallcraft:birch_log_wall"
+  }
+}

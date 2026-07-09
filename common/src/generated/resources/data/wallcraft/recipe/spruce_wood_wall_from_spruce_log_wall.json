@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "spruce_wood_wall",
+  "key": {
+    "#": "wallcraft:spruce_log_wall"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "wallcraft:spruce_wood_wall"
+  }
+}

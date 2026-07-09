@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mangrove_log_wall",
+  "key": {
+    "#": "minecraft:mangrove_log"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "wallcraft:mangrove_log_wall"
+  }
+}

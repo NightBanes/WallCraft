@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "wallcraft:warped_hyphae_wall_from_warped_stem_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warped_stem_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": "wallcraft:warped_stem_wall"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_warped_stem_wall"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "wallcraft:warped_hyphae_wall_from_warped_stem_wall"
+    ]
+  }
+}

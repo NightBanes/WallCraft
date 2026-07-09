@@ -35,15 +35,55 @@ public class ModLootTableProvider extends LootTableProvider {
         protected void generate() {
             // Log walls
             dropSelf(ModBlocks.OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.SPRUCE_LOG_WALL.block().get());
+            dropSelf(ModBlocks.BIRCH_LOG_WALL.block().get());
+            dropSelf(ModBlocks.JUNGLE_LOG_WALL.block().get());
+            dropSelf(ModBlocks.ACACIA_LOG_WALL.block().get());
+            dropSelf(ModBlocks.DARK_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.MANGROVE_LOG_WALL.block().get());
+            dropSelf(ModBlocks.CHERRY_LOG_WALL.block().get());
+            dropSelf(ModBlocks.PALE_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.CRIMSON_STEM_WALL.block().get());
+            dropSelf(ModBlocks.WARPED_STEM_WALL.block().get());
 
             // Wood walls
             dropSelf(ModBlocks.OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.SPRUCE_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.BIRCH_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.JUNGLE_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.ACACIA_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.DARK_OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.MANGROVE_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.CHERRY_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.PALE_OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.CRIMSON_HYPHAE_WALL.block().get());
+            dropSelf(ModBlocks.WARPED_HYPHAE_WALL.block().get());
 
             // Stripped Log walls
             dropSelf(ModBlocks.STRIPPED_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_SPRUCE_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_BIRCH_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_JUNGLE_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_ACACIA_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_DARK_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_MANGROVE_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_CHERRY_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_PALE_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_CRIMSON_STEM_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_WARPED_STEM_WALL.block().get());
 
             // Stripped Wood walls
             dropSelf(ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_SPRUCE_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_BIRCH_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_JUNGLE_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_ACACIA_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_DARK_OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_MANGROVE_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_CHERRY_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_PALE_OAK_WOOD_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_WARPED_HYPHAE_WALL.block().get());
 
             // Plank walls
             dropSelf(ModBlocks.OAK_PLANK_WALL.block().get());

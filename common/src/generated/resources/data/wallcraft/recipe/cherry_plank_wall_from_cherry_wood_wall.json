@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cherry_plank_wall",
+  "ingredients": [
+    "wallcraft:cherry_wood_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:cherry_plank_wall"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mangrove_log_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": "wallcraft:mangrove_log_wall"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "wallcraft:mangrove_wood_wall_from_mangrove_log_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mangrove_log_wall"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "wallcraft:mangrove_wood_wall_from_mangrove_log_wall"
+    ]
+  }
+}

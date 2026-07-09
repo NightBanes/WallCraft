@@ -44,9 +44,55 @@ public class ModRecipeProvider extends RecipeProvider {
 
         // Log walls
         shapedWall(ModBlocks.OAK_LOG_WALL.block().get(), Blocks.OAK_LOG);
+        shapedWall(ModBlocks.SPRUCE_LOG_WALL.block().get(), Blocks.SPRUCE_LOG);
+        shapedWall(ModBlocks.BIRCH_LOG_WALL.block().get(), Blocks.BIRCH_LOG);
+        shapedWall(ModBlocks.JUNGLE_LOG_WALL.block().get(), Blocks.JUNGLE_LOG);
+        shapedWall(ModBlocks.ACACIA_LOG_WALL.block().get(), Blocks.ACACIA_LOG);
+        shapedWall(ModBlocks.DARK_OAK_LOG_WALL.block().get(), Blocks.DARK_OAK_LOG);
+        shapedWall(ModBlocks.MANGROVE_LOG_WALL.block().get(), Blocks.MANGROVE_LOG);
+        shapedWall(ModBlocks.CHERRY_LOG_WALL.block().get(), Blocks.CHERRY_LOG);
+        shapedWall(ModBlocks.PALE_OAK_LOG_WALL.block().get(), Blocks.PALE_OAK_LOG);
+        shapedWall(ModBlocks.CRIMSON_STEM_WALL.block().get(), Blocks.CRIMSON_STEM);
+        shapedWall(ModBlocks.WARPED_STEM_WALL.block().get(), Blocks.WARPED_STEM);
 
         // Wood walls
         shapedWall(ModBlocks.OAK_WOOD_WALL.block().get(), Blocks.OAK_WOOD);
+        shapedWall(ModBlocks.SPRUCE_WOOD_WALL.block().get(), Blocks.SPRUCE_WOOD);
+        shapedWall(ModBlocks.BIRCH_WOOD_WALL.block().get(), Blocks.BIRCH_WOOD);
+        shapedWall(ModBlocks.JUNGLE_WOOD_WALL.block().get(), Blocks.JUNGLE_WOOD);
+        shapedWall(ModBlocks.ACACIA_WOOD_WALL.block().get(), Blocks.ACACIA_WOOD);
+        shapedWall(ModBlocks.DARK_OAK_WOOD_WALL.block().get(), Blocks.DARK_OAK_WOOD);
+        shapedWall(ModBlocks.MANGROVE_WOOD_WALL.block().get(), Blocks.MANGROVE_WOOD);
+        shapedWall(ModBlocks.CHERRY_WOOD_WALL.block().get(), Blocks.CHERRY_WOOD);
+        shapedWall(ModBlocks.PALE_OAK_WOOD_WALL.block().get(), Blocks.PALE_OAK_WOOD);
+        shapedWall(ModBlocks.CRIMSON_HYPHAE_WALL.block().get(), Blocks.CRIMSON_HYPHAE);
+        shapedWall(ModBlocks.WARPED_HYPHAE_WALL.block().get(), Blocks.WARPED_HYPHAE);
+
+        // Stripped Log walls
+        shapedWall(ModBlocks.STRIPPED_OAK_LOG_WALL.block().get(), Blocks.STRIPPED_OAK_LOG);
+        shapedWall(ModBlocks.STRIPPED_SPRUCE_LOG_WALL.block().get(), Blocks.STRIPPED_SPRUCE_LOG);
+        shapedWall(ModBlocks.STRIPPED_BIRCH_LOG_WALL.block().get(), Blocks.STRIPPED_BIRCH_LOG);
+        shapedWall(ModBlocks.STRIPPED_JUNGLE_LOG_WALL.block().get(), Blocks.STRIPPED_JUNGLE_LOG);
+        shapedWall(ModBlocks.STRIPPED_ACACIA_LOG_WALL.block().get(), Blocks.STRIPPED_ACACIA_LOG);
+        shapedWall(ModBlocks.STRIPPED_DARK_OAK_LOG_WALL.block().get(), Blocks.STRIPPED_DARK_OAK_LOG);
+        shapedWall(ModBlocks.STRIPPED_MANGROVE_LOG_WALL.block().get(), Blocks.STRIPPED_MANGROVE_LOG);
+        shapedWall(ModBlocks.STRIPPED_CHERRY_LOG_WALL.block().get(), Blocks.STRIPPED_CHERRY_LOG);
+        shapedWall(ModBlocks.STRIPPED_PALE_OAK_LOG_WALL.block().get(), Blocks.STRIPPED_PALE_OAK_LOG);
+        shapedWall(ModBlocks.STRIPPED_CRIMSON_STEM_WALL.block().get(), Blocks.STRIPPED_CRIMSON_STEM);
+        shapedWall(ModBlocks.STRIPPED_WARPED_STEM_WALL.block().get(), Blocks.STRIPPED_WARPED_STEM);
+
+        // Stripped Wood walls
+        shapedWall(ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get(), Blocks.STRIPPED_OAK_WOOD);
+        shapedWall(ModBlocks.STRIPPED_SPRUCE_WOOD_WALL.block().get(), Blocks.STRIPPED_SPRUCE_WOOD);
+        shapedWall(ModBlocks.STRIPPED_BIRCH_WOOD_WALL.block().get(), Blocks.STRIPPED_BIRCH_WOOD);
+        shapedWall(ModBlocks.STRIPPED_JUNGLE_WOOD_WALL.block().get(), Blocks.STRIPPED_JUNGLE_WOOD);
+        shapedWall(ModBlocks.STRIPPED_ACACIA_WOOD_WALL.block().get(), Blocks.STRIPPED_ACACIA_WOOD);
+        shapedWall(ModBlocks.STRIPPED_DARK_OAK_WOOD_WALL.block().get(), Blocks.STRIPPED_DARK_OAK_WOOD);
+        shapedWall(ModBlocks.STRIPPED_MANGROVE_WOOD_WALL.block().get(), Blocks.STRIPPED_MANGROVE_WOOD);
+        shapedWall(ModBlocks.STRIPPED_CHERRY_WOOD_WALL.block().get(), Blocks.STRIPPED_CHERRY_WOOD);
+        shapedWall(ModBlocks.STRIPPED_PALE_OAK_WOOD_WALL.block().get(), Blocks.STRIPPED_PALE_OAK_WOOD);
+        shapedWall(ModBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.block().get(), Blocks.STRIPPED_CRIMSON_HYPHAE);
+        shapedWall(ModBlocks.STRIPPED_WARPED_HYPHAE_WALL.block().get(), Blocks.STRIPPED_WARPED_HYPHAE);
 
         // Plank walls
         shapedWall(ModBlocks.OAK_PLANK_WALL.block().get(), Blocks.OAK_PLANKS);
@@ -64,13 +110,43 @@ public class ModRecipeProvider extends RecipeProvider {
 
         // Wood wall from Log wall
         shapedWallConverter(ModBlocks.OAK_WOOD_WALL.item().get(), ModBlocks.OAK_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.SPRUCE_WOOD_WALL.item().get(), ModBlocks.SPRUCE_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.BIRCH_WOOD_WALL.item().get(), ModBlocks.BIRCH_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.JUNGLE_WOOD_WALL.item().get(), ModBlocks.JUNGLE_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.ACACIA_WOOD_WALL.item().get(), ModBlocks.ACACIA_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.DARK_OAK_WOOD_WALL.item().get(), ModBlocks.DARK_OAK_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.MANGROVE_WOOD_WALL.item().get(), ModBlocks.MANGROVE_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.CHERRY_WOOD_WALL.item().get(), ModBlocks.CHERRY_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.PALE_OAK_WOOD_WALL.item().get(), ModBlocks.PALE_OAK_LOG_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.CRIMSON_HYPHAE_WALL.item().get(), ModBlocks.CRIMSON_STEM_WALL.item().get(), 3);
+        shapedWallConverter(ModBlocks.WARPED_HYPHAE_WALL.item().get(), ModBlocks.WARPED_STEM_WALL.item().get(), 3);
 
         // Plank wall from
             // Log wall
         shapelessWallConverter(ModBlocks.OAK_PLANK_WALL.item().get(), ModBlocks.OAK_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.SPRUCE_PLANK_WALL.item().get(), ModBlocks.SPRUCE_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.BIRCH_PLANK_WALL.item().get(), ModBlocks.BIRCH_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.JUNGLE_PLANK_WALL.item().get(), ModBlocks.JUNGLE_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.ACACIA_PLANK_WALL.item().get(), ModBlocks.ACACIA_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.DARK_OAK_PLANK_WALL.item().get(), ModBlocks.DARK_OAK_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.MANGROVE_PLANK_WALL.item().get(), ModBlocks.MANGROVE_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.CHERRY_PLANK_WALL.item().get(), ModBlocks.CHERRY_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.PALE_OAK_PLANK_WALL.item().get(), ModBlocks.PALE_OAK_LOG_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.CRIMSON_PLANK_WALL.item().get(), ModBlocks.CRIMSON_STEM_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.WARPED_PLANK_WALL.item().get(), ModBlocks.WARPED_STEM_WALL.block().get(), 4);
 
             // Wood wall
         shapelessWallConverter(ModBlocks.OAK_PLANK_WALL.item().get(), ModBlocks.OAK_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.SPRUCE_PLANK_WALL.item().get(), ModBlocks.SPRUCE_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.BIRCH_PLANK_WALL.item().get(), ModBlocks.BIRCH_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.JUNGLE_PLANK_WALL.item().get(), ModBlocks.JUNGLE_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.ACACIA_PLANK_WALL.item().get(), ModBlocks.ACACIA_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.DARK_OAK_PLANK_WALL.item().get(), ModBlocks.DARK_OAK_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.MANGROVE_PLANK_WALL.item().get(), ModBlocks.MANGROVE_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.CHERRY_PLANK_WALL.item().get(), ModBlocks.CHERRY_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.PALE_OAK_PLANK_WALL.item().get(), ModBlocks.PALE_OAK_WOOD_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.CRIMSON_PLANK_WALL.item().get(), ModBlocks.CRIMSON_HYPHAE_WALL.block().get(), 4);
+        shapelessWallConverter(ModBlocks.WARPED_PLANK_WALL.item().get(), ModBlocks.WARPED_HYPHAE_WALL.block().get(), 4);
 
         // Stone-type walls
         shapedWall(ModBlocks.STONE_WALL.block().get(), Blocks.STONE);

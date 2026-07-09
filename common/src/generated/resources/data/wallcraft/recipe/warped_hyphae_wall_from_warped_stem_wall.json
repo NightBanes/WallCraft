@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "warped_hyphae_wall",
+  "key": {
+    "#": "wallcraft:warped_stem_wall"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "wallcraft:warped_hyphae_wall"
+  }
+}

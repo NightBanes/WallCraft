@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "dark_oak_plank_wall",
+  "ingredients": [
+    "wallcraft:dark_oak_log_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:dark_oak_plank_wall"
+  }
+}

@@ -24,15 +24,55 @@ public class ModModelProvider extends ModelProvider {
 
         // Log walls
         ModWallGenerator.createLogWall(blockModels, Blocks.OAK_LOG, ModBlocks.OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.BIRCH_LOG, ModBlocks.BIRCH_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.ACACIA_LOG, ModBlocks.ACACIA_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.CHERRY_LOG, ModBlocks.CHERRY_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_STEM_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.WARPED_STEM, ModBlocks.WARPED_STEM_WALL.block().get());
 
         // Wood walls
         ModWallGenerator.createWall(blockModels, Blocks.OAK_LOG, ModBlocks.OAK_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.BIRCH_LOG, ModBlocks.BIRCH_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.ACACIA_LOG, ModBlocks.ACACIA_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.CHERRY_LOG, ModBlocks.CHERRY_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_HYPHAE_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.WARPED_STEM, ModBlocks.WARPED_HYPHAE_WALL.block().get());
 
         // Stripped Log walls
         ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_OAK_LOG, ModBlocks.STRIPPED_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_SPRUCE_LOG, ModBlocks.STRIPPED_SPRUCE_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_BIRCH_LOG, ModBlocks.STRIPPED_BIRCH_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_JUNGLE_LOG, ModBlocks.STRIPPED_JUNGLE_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_ACACIA_LOG, ModBlocks.STRIPPED_ACACIA_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_DARK_OAK_LOG, ModBlocks.STRIPPED_DARK_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_MANGROVE_LOG, ModBlocks.STRIPPED_MANGROVE_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_PALE_OAK_LOG, ModBlocks.STRIPPED_PALE_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_CRIMSON_STEM, ModBlocks.STRIPPED_CRIMSON_STEM_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_WARPED_STEM, ModBlocks.STRIPPED_WARPED_STEM_WALL.block().get());
 
         // Stripped Wood walls
         ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_OAK_LOG, ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_SPRUCE_LOG, ModBlocks.STRIPPED_SPRUCE_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_BIRCH_LOG, ModBlocks.STRIPPED_BIRCH_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_JUNGLE_LOG, ModBlocks.STRIPPED_JUNGLE_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_ACACIA_LOG, ModBlocks.STRIPPED_ACACIA_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_DARK_OAK_LOG, ModBlocks.STRIPPED_DARK_OAK_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_MANGROVE_LOG, ModBlocks.STRIPPED_MANGROVE_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_PALE_OAK_LOG, ModBlocks.STRIPPED_PALE_OAK_WOOD_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_CRIMSON_STEM, ModBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.block().get());
+        ModWallGenerator.createWall(blockModels, Blocks.STRIPPED_WARPED_STEM, ModBlocks.STRIPPED_WARPED_HYPHAE_WALL.block().get());
 
         // Plank walls
         ModWallGenerator.createWall(blockModels, Blocks.OAK_PLANKS, ModBlocks.OAK_PLANK_WALL.block().get());
