@@ -20,83 +20,18 @@ public final class ModWallGenerator {
 
     private ModWallGenerator() {}
 
-    /// Creates a wall using the side and top texture of the provided block
-    public static void createLogWall(
-            BlockModelGenerators blockModels,
-            Block textureBlock,
-            Block wallBlock
-    ) {
-        createLogWall(
-                blockModels,
-                wallBlock,
-                TextureMapping.getBlockTexture(textureBlock),
-                TextureMapping.getBlockTexture(textureBlock, "_top")
-        );
-    }
-
-    /// Creates a wall using only the side texture of the provided block
-    public static void createWall(
-            BlockModelGenerators blockModels,
-            Block textureBlock,
-            Block wallBlock
-    ) {
+    /// Creates a wall using the side texture of the provided block
+    public static void createWall(BlockModelGenerators blockModels, Block textureBlock, Block wallBlock) {
         createWall(blockModels, wallBlock, TextureMapping.getBlockTexture(textureBlock));
     }
 
-    public static void createWall(
-            BlockModelGenerators blockModels,
-            Block wallBlock,
-            Identifier texture
-    ) {
+    /// Creates a wall using the provided texture
+    public static void createWall(BlockModelGenerators blockModels, Identifier texture, Block wallBlock) {
+        //createWall(blockModels, wallBlock, texture);
         createWall(blockModels, wallBlock, new Material(texture));
     }
 
-    /// Creates a wall using the provided texture
-    public static void createWall(
-            BlockModelGenerators blockModels,
-            Identifier texture,
-            Block wallBlock
-    ) {
-        createWall(blockModels, wallBlock, texture);
-    }
-
-    public static void createLogWall(
-            BlockModelGenerators blockModels,
-            Block wallBlock,
-            Identifier sideTexture,
-            Identifier endTexture
-    ) {
-        createLogWall(blockModels, wallBlock, new Material(sideTexture), new Material(endTexture));
-    }
-
-    private static void createLogWall(
-            BlockModelGenerators blockModels,
-            Block wallBlock,
-            Material sideMaterial,
-            Material endMaterial
-    ) {
-        TextureMapping sideTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial);
-        TextureMapping logTextureMapping = new TextureMapping()
-                .put(TextureSlot.WALL, sideMaterial)
-                .put(TextureSlot.END, endMaterial);
-
-        BiConsumer<Identifier, ModelInstance> modelOutput = modelOutput(blockModels);
-        Consumer<BlockModelDefinitionGenerator> blockStateOutput = blockStateOutput(blockModels);
-
-        Identifier postModel = ModModelTemplates.LOG_WALL_POST.create(wallBlock, logTextureMapping, modelOutput);
-        Identifier sideModel = ModelTemplates.WALL_LOW_SIDE.create(wallBlock, sideTextureMapping, modelOutput);
-        Identifier tallSideModel = ModelTemplates.WALL_TALL_SIDE.create(wallBlock, sideTextureMapping, modelOutput);
-        Identifier inventoryModel = ModModelTemplates.LOG_WALL_INVENTORY.create(wallBlock, logTextureMapping, modelOutput);
-
-        blockStateOutput.accept(createWall(wallBlock, plainVariant(postModel), plainVariant(sideModel), plainVariant(tallSideModel)));
-        registerSimpleItemModel(blockModels, wallBlock, inventoryModel);
-    }
-
-    private static void createWall(
-            BlockModelGenerators blockModels,
-            Block wallBlock,
-            Material wallMaterial
-    ) {
+    private static void createWall(BlockModelGenerators blockModels, Block wallBlock, Material wallMaterial) {
         TextureMapping textureMapping = new TextureMapping().put(TextureSlot.WALL, wallMaterial);
 
         BiConsumer<Identifier, ModelInstance> modelOutput = modelOutput(blockModels);
@@ -106,6 +41,27 @@ public final class ModWallGenerator {
         Identifier sideModel = ModelTemplates.WALL_LOW_SIDE.create(wallBlock, textureMapping, modelOutput);
         Identifier tallSideModel = ModelTemplates.WALL_TALL_SIDE.create(wallBlock, textureMapping, modelOutput);
         Identifier inventoryModel = ModelTemplates.WALL_INVENTORY.create(wallBlock, textureMapping, modelOutput);
+
+        blockStateOutput.accept(createWall(wallBlock, plainVariant(postModel), plainVariant(sideModel), plainVariant(tallSideModel)));
+        registerSimpleItemModel(blockModels, wallBlock, inventoryModel);
+    }
+
+    /// Creates a wall using the side and top texture of the provided block
+    public static void createLogWall(BlockModelGenerators blockModels, Block textureBlock, Block wallBlock) {
+        createLogWall(blockModels, wallBlock, TextureMapping.getBlockTexture(textureBlock), TextureMapping.getBlockTexture(textureBlock, "_top"));
+    }
+
+    private static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Material sideMaterial, Material endMaterial) {
+        TextureMapping sideTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial);
+        TextureMapping logTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial).put(TextureSlot.END, endMaterial);
+
+        BiConsumer<Identifier, ModelInstance> modelOutput = modelOutput(blockModels);
+        Consumer<BlockModelDefinitionGenerator> blockStateOutput = blockStateOutput(blockModels);
+
+        Identifier postModel = ModModelTemplates.LOG_WALL_POST.create(wallBlock, logTextureMapping, modelOutput);
+        Identifier sideModel = ModelTemplates.WALL_LOW_SIDE.create(wallBlock, sideTextureMapping, modelOutput);
+        Identifier tallSideModel = ModelTemplates.WALL_TALL_SIDE.create(wallBlock, sideTextureMapping, modelOutput);
+        Identifier inventoryModel = ModModelTemplates.LOG_WALL_INVENTORY.create(wallBlock, logTextureMapping, modelOutput);
 
         blockStateOutput.accept(createWall(wallBlock, plainVariant(postModel), plainVariant(sideModel), plainVariant(tallSideModel)));
         registerSimpleItemModel(blockModels, wallBlock, inventoryModel);

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "spruce_plank_wall",
+  "ingredients": [
+    "wallcraft:stripped_spruce_wood_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:spruce_plank_wall"
+  }
+}

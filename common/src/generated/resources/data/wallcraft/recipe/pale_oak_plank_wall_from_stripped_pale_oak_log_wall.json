@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "pale_oak_plank_wall",
+  "ingredients": [
+    "wallcraft:stripped_pale_oak_log_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:pale_oak_plank_wall"
+  }
+}

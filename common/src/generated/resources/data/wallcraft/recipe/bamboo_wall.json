@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bamboo_wall",
+  "key": {
+    "#": "minecraft:bamboo_block"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "wallcraft:bamboo_wall"
+  }
+}

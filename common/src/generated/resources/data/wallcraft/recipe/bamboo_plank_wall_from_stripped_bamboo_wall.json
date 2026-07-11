@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "bamboo_plank_wall",
+  "ingredients": [
+    "wallcraft:stripped_bamboo_wall"
+  ],
+  "result": {
+    "count": 2,
+    "id": "wallcraft:bamboo_plank_wall"
+  }
+}

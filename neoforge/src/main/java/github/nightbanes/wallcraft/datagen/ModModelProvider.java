@@ -32,6 +32,7 @@ public class ModModelProvider extends ModelProvider {
         ModWallGenerator.createLogWall(blockModels, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_LOG_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.CHERRY_LOG, ModBlocks.CHERRY_LOG_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.PALE_OAK_LOG, ModBlocks.PALE_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.BAMBOO_BLOCK, ModBlocks.BAMBOO_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_STEM_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.WARPED_STEM, ModBlocks.WARPED_STEM_WALL.block().get());
 
@@ -58,6 +59,7 @@ public class ModModelProvider extends ModelProvider {
         ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_MANGROVE_LOG, ModBlocks.STRIPPED_MANGROVE_LOG_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_PALE_OAK_LOG, ModBlocks.STRIPPED_PALE_OAK_LOG_WALL.block().get());
+        ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_BAMBOO_BLOCK, ModBlocks.STRIPPED_BAMBOO_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_CRIMSON_STEM, ModBlocks.STRIPPED_CRIMSON_STEM_WALL.block().get());
         ModWallGenerator.createLogWall(blockModels, Blocks.STRIPPED_WARPED_STEM, ModBlocks.STRIPPED_WARPED_STEM_WALL.block().get());
 
@@ -87,6 +89,9 @@ public class ModModelProvider extends ModelProvider {
         ModWallGenerator.createWall(blockModels, Blocks.BAMBOO_PLANKS, ModBlocks.BAMBOO_PLANK_WALL.block().get());
         ModWallGenerator.createWall(blockModels, Blocks.CRIMSON_PLANKS, ModBlocks.CRIMSON_PLANK_WALL.block().get());
         ModWallGenerator.createWall(blockModels, Blocks.WARPED_PLANKS, ModBlocks.WARPED_PLANK_WALL.block().get());
+
+        // Decorative walls
+        ModWallGenerator.createWall(blockModels, Blocks.BAMBOO_MOSAIC, ModBlocks.BAMBOO_MOSAIC_WALL.block().get());
 
         // Stone-type walls
         ModWallGenerator.createWall(blockModels, Blocks.STONE, ModBlocks.STONE_WALL.block().get());

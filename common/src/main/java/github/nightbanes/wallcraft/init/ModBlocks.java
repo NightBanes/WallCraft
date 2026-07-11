@@ -77,9 +77,9 @@ final public class ModBlocks {
     public static final BlockItemRegistryHandle<Block> PALE_OAK_PLANK_WALL = plankWall("pale_oak_plank_wall");
 
     // Bamboo walls
-    //bamboo
-    //stripped bamboo
-    //bamboo mosaic
+    public static final BlockItemRegistryHandle<Block> BAMBOO_WALL = strippableWoodWall("bamboo_wall", ModBlocks::getStrippedBambooWall);
+    public static final BlockItemRegistryHandle<Block> STRIPPED_BAMBOO_WALL = woodWall("stripped_bamboo_wall");
+    public static final BlockItemRegistryHandle<Block> BAMBOO_MOSAIC_WALL = woodWall("bamboo_mosaic_wall");
     public static final BlockItemRegistryHandle<Block> BAMBOO_PLANK_WALL = plankWall("bamboo_plank_wall");
 
     // Crimson walls
@@ -96,51 +96,47 @@ final public class ModBlocks {
     public static final BlockItemRegistryHandle<Block> STRIPPED_WARPED_HYPHAE_WALL = woodWall("stripped_warped_hyphae_wall");
     public static final BlockItemRegistryHandle<Block> WARPED_PLANK_WALL = plankWall("warped_plank_wall");
 
-
     // Stone-like walls
-    public static final BlockItemRegistryHandle<Block> STONE_WALL = Services.REGISTRY.registerBlockItem("stone_wall",
-            properties -> new WallBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> POLISHED_GRANITE_WALL = Services.REGISTRY.registerBlockItem("polished_granite_wall",
-            properties -> new WallBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> POLISHED_DIORITE_WALL = Services.REGISTRY.registerBlockItem("polished_diorite_wall",
-            properties -> new WallBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> POLISHED_ANDESITE_WALL = Services.REGISTRY.registerBlockItem("polished_andesite_wall",
-            properties -> new WallBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> SMOOTH_SANDSTONE_WALL = Services.REGISTRY.registerBlockItem("smooth_sandstone_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> SMOOTH_RED_SANDSTONE_WALL = Services.REGISTRY.registerBlockItem("smooth_red_sandstone_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
+    public static final BlockItemRegistryHandle<Block> STONE_WALL = stoneWall("stone_wall",1.5F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> POLISHED_GRANITE_WALL = stoneWall("polished_granite_wall", 1.5F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> POLISHED_DIORITE_WALL = stoneWall("polished_diorite_wall", 1.5F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> POLISHED_ANDESITE_WALL = stoneWall("polished_andesite_wall", 1.5F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> SMOOTH_SANDSTONE_WALL = stoneWall("smooth_sandstone_wall", 2.0F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> SMOOTH_RED_SANDSTONE_WALL = stoneWall("smooth_red_sandstone_wall", 2.0F, 6.0F);
 
-    /*
-    public static final BlockItemRegistryHandle<Block> PRISMARINE_BRICK_WALL = Services.REGISTRY.registerBlockItem("prismarine_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> DARK_PRISMARINE_BRICK_WALL = Services.REGISTRY.registerBlockItem("dark_prismarine_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
-    public static final BlockItemRegistryHandle<Block> PURPUR_WALL = Services.REGISTRY.registerBlockItem("purpur_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
-
-    public static final BlockItemRegistryHandle<Block> QUARTZ_WALL = Services.REGISTRY.registerBlockItem("quartz_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
-    //quartz bricks
-    public static final BlockItemRegistryHandle<Block> SMOOTH_QUARTZ_WALL = Services.REGISTRY.registerBlockItem("smooth_quartz_wall",
-            properties -> new WallBlock(properties.strength(2.0F, 6.0F).requiresCorrectToolForDrops()));
-
+    // Cut Sandstone
+    // Cut Red Sandstone
+    // Basalt
+    // Smooth Basalt
+    // Polished Basalt
+    // Prismarine Brick
+    // Dark Prismarine Brick
+    // End Stone
+    // PURPUR
+    // Quartz
+    // Chiseled Quartz
+    // Quartz Brick
+    // Smooth Quartz
     // Cut Copper
-    */
-
-    private static BlockItemRegistryHandle<Block> woodWall(String name) {
-        return Services.REGISTRY.registerBlockItem(name,
-                properties -> new WallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops()));
-    }
-
-    private static BlockItemRegistryHandle<Block> strippableWoodWall(String name, Supplier<? extends Block> strippedBlock) {
-        return Services.REGISTRY.registerBlockItem(name,
-                properties -> new StrippableWallBlock(properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops(), strippedBlock));
-    }
 
     private static BlockItemRegistryHandle<Block> plankWall(String name) {
         return Services.REGISTRY.registerBlockItem(name,
-                properties -> new WallBlock(properties.strength(2.0F, 3.0F).requiresCorrectToolForDrops()));
+                properties -> new WallBlock(properties.strength(2.0F, 3.0F)));
+    }
+
+    private static BlockItemRegistryHandle<Block> woodWall(String name) {
+        return Services.REGISTRY.registerBlockItem(name,
+                properties -> new WallBlock(properties.strength(2.0F, 2.0F)));
+    }
+
+    private static BlockItemRegistryHandle<Block> stoneWall(String name, Float destroyTime, Float explosionResistance) {
+        return Services.REGISTRY.registerBlockItem(name,
+                properties -> new WallBlock(properties.strength(destroyTime, explosionResistance).requiresCorrectToolForDrops()));
+    }
+
+    private static BlockItemRegistryHandle<Block> strippableWoodWall(String name, Supplier<? extends Block> strippedBlock) {
+        return Services.REGISTRY.registerBlockItem(name, properties -> new StrippableWallBlock(
+                properties.strength(2.0F, 2.0F).requiresCorrectToolForDrops(), strippedBlock));
     }
 
     private static Block getStrippedOakLogWall() { return STRIPPED_OAK_LOG_WALL.block().get(); }
@@ -161,6 +157,9 @@ final public class ModBlocks {
     private static Block getStrippedCherryWoodWall() { return STRIPPED_CHERRY_WOOD_WALL.block().get(); }
     private static Block getStrippedPaleOakLogWall() { return STRIPPED_PALE_OAK_LOG_WALL.block().get(); }
     private static Block getStrippedPaleOakWoodWall() { return STRIPPED_PALE_OAK_WOOD_WALL.block().get(); }
+
+    private static Block getStrippedBambooWall() { return STRIPPED_BAMBOO_WALL.block().get(); }
+
     private static Block getStrippedCrimsonStemWall() { return STRIPPED_CRIMSON_STEM_WALL.block().get(); }
     private static Block getStrippedCrimsonHyphaeWall() { return STRIPPED_CRIMSON_HYPHAE_WALL.block().get(); }
     private static Block getStrippedWarpedStemWall() { return STRIPPED_WARPED_STEM_WALL.block().get(); }

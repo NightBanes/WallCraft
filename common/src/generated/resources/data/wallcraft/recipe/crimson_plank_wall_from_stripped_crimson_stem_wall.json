@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "crimson_plank_wall",
+  "ingredients": [
+    "wallcraft:stripped_crimson_stem_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:crimson_plank_wall"
+  }
+}

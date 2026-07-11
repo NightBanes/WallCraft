@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "birch_plank_wall",
+  "ingredients": [
+    "wallcraft:stripped_birch_wood_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:birch_plank_wall"
+  }
+}

@@ -3,7 +3,6 @@ package github.nightbanes.wallcraft.datagen;
 import github.nightbanes.wallcraft.Constants;
 import github.nightbanes.wallcraft.init.ModBlocks;
 import github.nightbanes.wallcraft.init.ModCreativeTabs;
-import github.nightbanes.wallcraft.init.ModItems;
 import github.nightbanes.wallcraft.services.util.BlockItemRegistryHandle;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
@@ -31,6 +30,7 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         addBlockAndItem(ModBlocks.MANGROVE_LOG_WALL, "Mangrove Log Wall");
         addBlockAndItem(ModBlocks.CHERRY_LOG_WALL, "Cherry Log Wall");
         addBlockAndItem(ModBlocks.PALE_OAK_LOG_WALL, "Pale Oak Log Wall");
+        addBlockAndItem(ModBlocks.BAMBOO_WALL, "Bamboo Wall");
         addBlockAndItem(ModBlocks.CRIMSON_STEM_WALL, "Crimson Stem Wall");
         addBlockAndItem(ModBlocks.WARPED_STEM_WALL, "Warped Stem Wall");
 
@@ -57,6 +57,7 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         addBlockAndItem(ModBlocks.STRIPPED_MANGROVE_LOG_WALL, "Stripped Mangrove Log Wall");
         addBlockAndItem(ModBlocks.STRIPPED_CHERRY_LOG_WALL, "Stripped Cherry Log Wall");
         addBlockAndItem(ModBlocks.STRIPPED_PALE_OAK_LOG_WALL, "Stripped Pale Oak Log Wall");
+        addBlockAndItem(ModBlocks.STRIPPED_BAMBOO_WALL, "Stripped Bamboo Wall");
         addBlockAndItem(ModBlocks.STRIPPED_CRIMSON_STEM_WALL, "Stripped Crimson Stem Wall");
         addBlockAndItem(ModBlocks.STRIPPED_WARPED_STEM_WALL, "Stripped Warped Stem Wall");
 
@@ -86,6 +87,9 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         addBlockAndItem(ModBlocks.BAMBOO_PLANK_WALL, "Bamboo Plank Wall");
         addBlockAndItem(ModBlocks.CRIMSON_PLANK_WALL, "Crimson Plank Wall");
         addBlockAndItem(ModBlocks.WARPED_PLANK_WALL, "Warped Plank Wall");
+
+        // Decorative walls
+        addBlockAndItem(ModBlocks.BAMBOO_MOSAIC_WALL, "Bamboo Mosaic Wall");
 
         // Stone-like walls
         addBlockAndItem(ModBlocks.STONE_WALL, "Stone Wall");

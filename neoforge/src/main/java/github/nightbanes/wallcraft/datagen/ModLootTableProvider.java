@@ -43,6 +43,7 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.MANGROVE_LOG_WALL.block().get());
             dropSelf(ModBlocks.CHERRY_LOG_WALL.block().get());
             dropSelf(ModBlocks.PALE_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.BAMBOO_WALL.block().get());
             dropSelf(ModBlocks.CRIMSON_STEM_WALL.block().get());
             dropSelf(ModBlocks.WARPED_STEM_WALL.block().get());
 
@@ -69,6 +70,7 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.STRIPPED_MANGROVE_LOG_WALL.block().get());
             dropSelf(ModBlocks.STRIPPED_CHERRY_LOG_WALL.block().get());
             dropSelf(ModBlocks.STRIPPED_PALE_OAK_LOG_WALL.block().get());
+            dropSelf(ModBlocks.STRIPPED_BAMBOO_WALL.block().get());
             dropSelf(ModBlocks.STRIPPED_CRIMSON_STEM_WALL.block().get());
             dropSelf(ModBlocks.STRIPPED_WARPED_STEM_WALL.block().get());
 
@@ -98,6 +100,9 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.BAMBOO_PLANK_WALL.block().get());
             dropSelf(ModBlocks.CRIMSON_PLANK_WALL.block().get());
             dropSelf(ModBlocks.WARPED_PLANK_WALL.block().get());
+
+            // Decorative walls
+            dropSelf(ModBlocks.BAMBOO_MOSAIC_WALL.block().get());
 
             // Stone-like walls
             dropSelf(ModBlocks.STONE_WALL.block().get());

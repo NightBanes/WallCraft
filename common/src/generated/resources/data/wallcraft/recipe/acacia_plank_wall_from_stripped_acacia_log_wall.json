@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "acacia_plank_wall",
+  "ingredients": [
+    "wallcraft:stripped_acacia_log_wall"
+  ],
+  "result": {
+    "count": 4,
+    "id": "wallcraft:acacia_plank_wall"
+  }
+}
