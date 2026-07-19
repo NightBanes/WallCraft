@@ -96,6 +96,8 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
         addBlockAndItem(ModBlocks.POLISHED_GRANITE_WALL, "Polished Granite Wall");
         addBlockAndItem(ModBlocks.POLISHED_DIORITE_WALL, "Polished Diorite Wall");
         addBlockAndItem(ModBlocks.POLISHED_ANDESITE_WALL, "Polished Andesite Wall");
+        addBlockAndItem(ModBlocks.CUT_SANDSTONE_WALL, "Cut Sandstone Wall");
+        addBlockAndItem(ModBlocks.CUT_RED_SANDSTONE_WALL, "Cut Red Sandstone Wall");
         addBlockAndItem(ModBlocks.SMOOTH_SANDSTONE_WALL, "Smooth Sandstone Wall");
         addBlockAndItem(ModBlocks.SMOOTH_RED_SANDSTONE_WALL, "Smooth Red Sandstone Wall");
     }

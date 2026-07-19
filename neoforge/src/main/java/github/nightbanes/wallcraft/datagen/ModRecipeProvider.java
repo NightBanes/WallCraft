@@ -189,6 +189,8 @@ public class ModRecipeProvider extends RecipeProvider {
         shapedWall(ModBlocks.POLISHED_GRANITE_WALL.block().get(), Blocks.POLISHED_GRANITE);
         shapedWall(ModBlocks.POLISHED_DIORITE_WALL.block().get(), Blocks.POLISHED_DIORITE);
         shapedWall(ModBlocks.POLISHED_ANDESITE_WALL.block().get(), Blocks.POLISHED_ANDESITE);
+        shapedWall(ModBlocks.CUT_SANDSTONE_WALL.block().get(), Blocks.CUT_SANDSTONE);
+        shapedWall(ModBlocks.CUT_RED_SANDSTONE_WALL.block().get(), Blocks.CUT_RED_SANDSTONE);
         shapedWall(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_SANDSTONE);
         shapedWall(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_RED_SANDSTONE);
 
@@ -197,6 +199,8 @@ public class ModRecipeProvider extends RecipeProvider {
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_WALL.block().get(), Blocks.POLISHED_GRANITE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL.block().get(), Blocks.POLISHED_DIORITE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL.block().get(), Blocks.POLISHED_ANDESITE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_WALL.block().get(), Blocks.CUT_SANDSTONE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_WALL.block().get(), Blocks.CUT_RED_SANDSTONE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_SANDSTONE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_RED_SANDSTONE);
 

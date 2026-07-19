@@ -101,11 +101,12 @@ final public class ModBlocks {
     public static final BlockItemRegistryHandle<Block> POLISHED_GRANITE_WALL = stoneWall("polished_granite_wall", 1.5F, 6.0F);
     public static final BlockItemRegistryHandle<Block> POLISHED_DIORITE_WALL = stoneWall("polished_diorite_wall", 1.5F, 6.0F);
     public static final BlockItemRegistryHandle<Block> POLISHED_ANDESITE_WALL = stoneWall("polished_andesite_wall", 1.5F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> CUT_SANDSTONE_WALL = stoneWall("cut_sandstone_wall", 2.0F, 6.0F);
     public static final BlockItemRegistryHandle<Block> SMOOTH_SANDSTONE_WALL = stoneWall("smooth_sandstone_wall", 2.0F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> CUT_RED_SANDSTONE_WALL = stoneWall("cut_red_sandstone_wall", 2.0F, 6.0F);
     public static final BlockItemRegistryHandle<Block> SMOOTH_RED_SANDSTONE_WALL = stoneWall("smooth_red_sandstone_wall", 2.0F, 6.0F);
 
-    // Cut Sandstone
-    // Cut Red Sandstone
+
     // Basalt
     // Smooth Basalt
     // Polished Basalt

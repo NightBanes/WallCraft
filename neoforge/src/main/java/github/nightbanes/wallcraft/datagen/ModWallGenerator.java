@@ -21,16 +21,16 @@ public final class ModWallGenerator {
     private ModWallGenerator() {}
 
     /// Creates a wall using the side texture of the provided block
-    public static void createWall(BlockModelGenerators blockModels, Block textureBlock, Block wallBlock) {
+    public static void createWall(BlockModelGenerators blockModels, Block wallBlock, Block textureBlock) {
         createWall(blockModels, wallBlock, TextureMapping.getBlockTexture(textureBlock));
     }
 
     /// Creates a wall using the provided texture
-    public static void createWall(BlockModelGenerators blockModels, Identifier texture, Block wallBlock) {
-        //createWall(blockModels, wallBlock, texture);
+    public static void createWall(BlockModelGenerators blockModels, Block wallBlock, Identifier texture) {
         createWall(blockModels, wallBlock, new Material(texture));
     }
 
+    /// Main function to create a wall using a single texture
     private static void createWall(BlockModelGenerators blockModels, Block wallBlock, Material wallMaterial) {
         TextureMapping textureMapping = new TextureMapping().put(TextureSlot.WALL, wallMaterial);
 
@@ -47,10 +47,16 @@ public final class ModWallGenerator {
     }
 
     /// Creates a wall using the side and top texture of the provided block
-    public static void createLogWall(BlockModelGenerators blockModels, Block textureBlock, Block wallBlock) {
+    public static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Block textureBlock) {
         createLogWall(blockModels, wallBlock, TextureMapping.getBlockTexture(textureBlock), TextureMapping.getBlockTexture(textureBlock, "_top"));
     }
 
+    /// Creates a wall using the side and top texture of the provided blocks
+    public static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Block sideTextureBlock, Block topTextureBlock) {
+        createLogWall(blockModels, wallBlock, TextureMapping.getBlockTexture(sideTextureBlock), TextureMapping.getBlockTexture(topTextureBlock, "_top"));
+    }
+
+    /// Main function to create a wall using two testures
     private static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Material sideMaterial, Material endMaterial) {
         TextureMapping sideTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial);
         TextureMapping logTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial).put(TextureSlot.END, endMaterial);

@@ -109,6 +109,8 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.POLISHED_GRANITE_WALL.block().get());
             dropSelf(ModBlocks.POLISHED_DIORITE_WALL.block().get());
             dropSelf(ModBlocks.POLISHED_ANDESITE_WALL.block().get());
+            dropSelf(ModBlocks.CUT_SANDSTONE_WALL.block().get());
+            dropSelf(ModBlocks.CUT_RED_SANDSTONE_WALL.block().get());
             dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get());
             dropSelf(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get());
         }

@@ -93,6 +93,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_GRANITE_WALL.block().key())
                 .add(ModBlocks.POLISHED_DIORITE_WALL.block().key())
                 .add(ModBlocks.POLISHED_ANDESITE_WALL.block().key())
+                .add(ModBlocks.CUT_SANDSTONE_WALL.block().key())
+                .add(ModBlocks.CUT_RED_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
 
@@ -173,6 +175,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.POLISHED_GRANITE_WALL.block().key())
                 .add(ModBlocks.POLISHED_DIORITE_WALL.block().key())
                 .add(ModBlocks.POLISHED_ANDESITE_WALL.block().key())
+                .add(ModBlocks.CUT_SANDSTONE_WALL.block().key())
+                .add(ModBlocks.CUT_RED_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
     }

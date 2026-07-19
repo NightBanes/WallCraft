@@ -1,0 +1,7 @@
+{
+  "parent": "wallcraft:block/template_log_wall_post",
+  "textures": {
+    "end": "minecraft:block/sandstone_top",
+    "wall": "minecraft:block/cut_sandstone"
+  }
+}
