@@ -1,6 +1,5 @@
 {
 	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
@@ -38,11 +37,18 @@
 	"display": {
 		"gui": {
 			"rotation": [30, 135, 0],
+			"translation": [ 0, 0, 0],
 			"scale": [0.625, 0.625, 0.625]
 		},
 		"fixed": {
 			"rotation": [0, 90, 0],
+			"translation": [ 0, 0, 0],
 			"scale": [0.5, 0.5, 0.5]
+		},
+		"on_shelf": {
+			"rotation": [ 0, 90, 0 ],
+			"translation": [ 0, 0, 0 ],
+			"scale": [ 1, 1, 1 ]
 		}
 	}
 }

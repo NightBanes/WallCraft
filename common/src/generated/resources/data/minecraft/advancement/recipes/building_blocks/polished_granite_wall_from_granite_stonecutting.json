@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_granite_wall": {
+    "has_granite": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:granite_wall"
+            "items": "minecraft:granite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polished_granite_wall_from_smelting_granite_wall"
+        "recipe": "minecraft:polished_granite_wall_from_granite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_granite_wall"
+      "has_granite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polished_granite_wall_from_smelting_granite_wall"
+      "minecraft:polished_granite_wall_from_granite_stonecutting"
     ]
   }
 }

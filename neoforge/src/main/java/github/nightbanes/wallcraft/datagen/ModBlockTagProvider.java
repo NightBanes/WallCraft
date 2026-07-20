@@ -96,7 +96,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CUT_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.CUT_RED_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key())
-                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
+                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key())
+                .add(ModBlocks.BASALT_WALL.block().key())
+                .add(ModBlocks.SMOOTH_BASALT_WALL.block().key())
+                .add(ModBlocks.POLISHED_BASALT_WALL.block().key());
 
         tag(BlockTags.WALLS)
                 // Log walls
@@ -178,6 +181,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CUT_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.CUT_RED_SANDSTONE_WALL.block().key())
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL.block().key())
-                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key());
+                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().key())
+                .add(ModBlocks.BASALT_WALL.block().key())
+                .add(ModBlocks.SMOOTH_BASALT_WALL.block().key())
+                .add(ModBlocks.POLISHED_BASALT_WALL.block().key());
     }
+
 }

@@ -2,6 +2,7 @@ package github.nightbanes.wallcraft.datagen;
 
 import github.nightbanes.wallcraft.init.ModBlocks;
 import github.nightbanes.wallcraft.services.NeoForgeRegistryHelper;
+import github.nightbanes.wallcraft.services.util.BlockItemRegistryHandle;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -10,6 +11,8 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -17,102 +20,33 @@ import java.util.concurrent.CompletableFuture;
 public class ModLootTableProvider extends LootTableProvider {
     public ModLootTableProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(
-                output,
-                Set.of(),
-                List.of(
-                        new SubProviderEntry(WallCraftBlockLootSubProvider::new, LootContextParamSets.BLOCK)
+                output, Set.of(), List.of(
+                        new SubProviderEntry(ModBlockLootSubProvider::new, LootContextParamSets.BLOCK)
                         //, new SubProviderEntry(...)
-                ),
-                registries);
+                ), registries);
     }
 
-    private static final class WallCraftBlockLootSubProvider extends BlockLootSubProvider {
-        WallCraftBlockLootSubProvider(HolderLookup.Provider registries) {
+    private static final class ModBlockLootSubProvider extends BlockLootSubProvider {
+        ModBlockLootSubProvider(HolderLookup.Provider registries) {
             super(Set.of(/*.add(explosion resistant items)*/), FeatureFlags.DEFAULT_FLAGS, registries);
         }
 
         @Override
         protected void generate() {
-            // Log walls
-            dropSelf(ModBlocks.OAK_LOG_WALL.block().get());
-            dropSelf(ModBlocks.SPRUCE_LOG_WALL.block().get());
-            dropSelf(ModBlocks.BIRCH_LOG_WALL.block().get());
-            dropSelf(ModBlocks.JUNGLE_LOG_WALL.block().get());
-            dropSelf(ModBlocks.ACACIA_LOG_WALL.block().get());
-            dropSelf(ModBlocks.DARK_OAK_LOG_WALL.block().get());
-            dropSelf(ModBlocks.MANGROVE_LOG_WALL.block().get());
-            dropSelf(ModBlocks.CHERRY_LOG_WALL.block().get());
-            dropSelf(ModBlocks.PALE_OAK_LOG_WALL.block().get());
-            dropSelf(ModBlocks.BAMBOO_WALL.block().get());
-            dropSelf(ModBlocks.CRIMSON_STEM_WALL.block().get());
-            dropSelf(ModBlocks.WARPED_STEM_WALL.block().get());
+            // Add blocks that do not drop self
+            Set<Block> customLootBlocks = Set.of(
+                    //ModBlocks.EXAMPLE_BLOCK.block().get()
+            );
 
-            // Wood walls
-            dropSelf(ModBlocks.OAK_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.SPRUCE_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.BIRCH_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.JUNGLE_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.ACACIA_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.DARK_OAK_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.MANGROVE_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.CHERRY_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.PALE_OAK_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.CRIMSON_HYPHAE_WALL.block().get());
-            dropSelf(ModBlocks.WARPED_HYPHAE_WALL.block().get());
+            // Add custom drops
+            //dropOther(ModBlocks.EXAMPLE_BLOCK.block().get(), ModItems.EXAMPLE_ITEM.get());
 
-            // Stripped Log walls
-            dropSelf(ModBlocks.STRIPPED_OAK_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_SPRUCE_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_BIRCH_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_JUNGLE_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_ACACIA_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_DARK_OAK_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_MANGROVE_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_CHERRY_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_PALE_OAK_LOG_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_BAMBOO_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_CRIMSON_STEM_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_WARPED_STEM_WALL.block().get());
-
-            // Stripped Wood walls
-            dropSelf(ModBlocks.STRIPPED_OAK_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_SPRUCE_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_BIRCH_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_JUNGLE_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_ACACIA_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_DARK_OAK_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_MANGROVE_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_CHERRY_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_PALE_OAK_WOOD_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.block().get());
-            dropSelf(ModBlocks.STRIPPED_WARPED_HYPHAE_WALL.block().get());
-
-            // Plank walls
-            dropSelf(ModBlocks.OAK_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.SPRUCE_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.BIRCH_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.JUNGLE_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.ACACIA_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.DARK_OAK_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.MANGROVE_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.CHERRY_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.PALE_OAK_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.BAMBOO_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.CRIMSON_PLANK_WALL.block().get());
-            dropSelf(ModBlocks.WARPED_PLANK_WALL.block().get());
-
-            // Decorative walls
-            dropSelf(ModBlocks.BAMBOO_MOSAIC_WALL.block().get());
-
-            // Stone-like walls
-            dropSelf(ModBlocks.STONE_WALL.block().get());
-            dropSelf(ModBlocks.POLISHED_GRANITE_WALL.block().get());
-            dropSelf(ModBlocks.POLISHED_DIORITE_WALL.block().get());
-            dropSelf(ModBlocks.POLISHED_ANDESITE_WALL.block().get());
-            dropSelf(ModBlocks.CUT_SANDSTONE_WALL.block().get());
-            dropSelf(ModBlocks.CUT_RED_SANDSTONE_WALL.block().get());
-            dropSelf(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get());
-            dropSelf(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get());
+            // Automatically sets every block to dropself unless added to customLootBlocks
+            for(Block block : modBlocks()) {
+                if(!customLootBlocks.contains(block)) {
+                    dropSelf(block);
+                }
+            }
         }
 
         @Override
@@ -121,6 +55,24 @@ public class ModLootTableProvider extends LootTableProvider {
                     .stream()
                     .map(entry -> (Block) entry.value())
                     .toList();
+        }
+
+        private Iterable<Block> modBlocks() {
+            return List.of(ModBlocks.class.getDeclaredFields())
+                    .stream()
+                    .filter(field -> Modifier.isStatic(field.getModifiers()))
+                    .filter(field -> BlockItemRegistryHandle.class.isAssignableFrom(field.getType()))
+                    .map(ModBlockLootSubProvider::getBlock)
+                    .toList();
+        }
+
+        private static Block getBlock(Field field) {
+            try {
+                BlockItemRegistryHandle<?> blockItem = (BlockItemRegistryHandle<?>) field.get(null);
+                return blockItem.block().get();
+            } catch(IllegalAccessException exception) {
+                throw new IllegalStateException("Failed to read block field " + field.getName(), exception);
+            }
         }
     }
 

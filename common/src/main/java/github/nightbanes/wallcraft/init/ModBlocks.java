@@ -4,6 +4,7 @@ import github.nightbanes.wallcraft.block.StrippableWallBlock;
 import github.nightbanes.wallcraft.services.Services;
 import github.nightbanes.wallcraft.services.util.BlockItemRegistryHandle;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.WallBlock;
 
 import java.util.function.Supplier;
@@ -97,27 +98,29 @@ final public class ModBlocks {
     public static final BlockItemRegistryHandle<Block> WARPED_PLANK_WALL = plankWall("warped_plank_wall");
 
     // Stone-like walls
-    public static final BlockItemRegistryHandle<Block> STONE_WALL = stoneWall("stone_wall",1.5F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> POLISHED_GRANITE_WALL = stoneWall("polished_granite_wall", 1.5F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> POLISHED_DIORITE_WALL = stoneWall("polished_diorite_wall", 1.5F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> POLISHED_ANDESITE_WALL = stoneWall("polished_andesite_wall", 1.5F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> CUT_SANDSTONE_WALL = stoneWall("cut_sandstone_wall", 2.0F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> SMOOTH_SANDSTONE_WALL = stoneWall("smooth_sandstone_wall", 2.0F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> CUT_RED_SANDSTONE_WALL = stoneWall("cut_red_sandstone_wall", 2.0F, 6.0F);
-    public static final BlockItemRegistryHandle<Block> SMOOTH_RED_SANDSTONE_WALL = stoneWall("smooth_red_sandstone_wall", 2.0F, 6.0F);
+    public static final BlockItemRegistryHandle<Block> STONE_WALL = stoneWall("stone_wall", Blocks.STONE);
+    public static final BlockItemRegistryHandle<Block> POLISHED_GRANITE_WALL = stoneWall("polished_granite_wall", Blocks.POLISHED_GRANITE);
+    public static final BlockItemRegistryHandle<Block> POLISHED_DIORITE_WALL = stoneWall("polished_diorite_wall", Blocks.POLISHED_DIORITE);
+    public static final BlockItemRegistryHandle<Block> POLISHED_ANDESITE_WALL = stoneWall("polished_andesite_wall", Blocks.POLISHED_ANDESITE);
+    public static final BlockItemRegistryHandle<Block> CUT_SANDSTONE_WALL = stoneWall("cut_sandstone_wall", Blocks.CUT_SANDSTONE);
+    public static final BlockItemRegistryHandle<Block> SMOOTH_SANDSTONE_WALL = stoneWall("smooth_sandstone_wall", Blocks.SMOOTH_SANDSTONE);
+    public static final BlockItemRegistryHandle<Block> CUT_RED_SANDSTONE_WALL = stoneWall("cut_red_sandstone_wall", Blocks.CUT_RED_SANDSTONE);
+    public static final BlockItemRegistryHandle<Block> SMOOTH_RED_SANDSTONE_WALL = stoneWall("smooth_red_sandstone_wall", Blocks.SMOOTH_RED_SANDSTONE);
 
-
-    // Basalt
-    // Smooth Basalt
-    // Polished Basalt
-    // Prismarine Brick
-    // Dark Prismarine Brick
-    // End Stone
-    // PURPUR
-    // Quartz
-    // Chiseled Quartz
-    // Quartz Brick
-    // Smooth Quartz
+    public static final BlockItemRegistryHandle<Block> BASALT_WALL = stoneWall("basalt_wall", Blocks.BASALT);
+    public static final BlockItemRegistryHandle<Block> SMOOTH_BASALT_WALL = stoneWall("smooth_basalt_wall", Blocks.SMOOTH_BASALT);
+    public static final BlockItemRegistryHandle<Block> POLISHED_BASALT_WALL = stoneWall("polished_basalt_wall", Blocks.POLISHED_BASALT);
+    //public static final BlockItemRegistryHandle<Block> PRISMARINE_BRICK_WALL = stoneWall("prismarine_brick_wall", Blocks.PRISMARINE_BRICKS);
+    //public static final BlockItemRegistryHandle<Block> DARK_PRISMARINE_WALL = stoneWall("dark_prismarine_wall", Blocks.DARK_PRISMARINE);
+    //public static final BlockItemRegistryHandle<Block> END_STONE_WALL = stoneWall("end_stone_wall", Blocks.END_STONE);
+    //public static final BlockItemRegistryHandle<Block> PURPUR_WALL = stoneWall("purpur_wall", Blocks.PURPUR_BLOCK);
+    //public static final BlockItemRegistryHandle<Block> QUARTZ_WALL = stoneWall("quartz_wall", Blocks.QUARTZ_BLOCK);
+    //public static final BlockItemRegistryHandle<Block> CHISELED_QUARTZ_WALL = stoneWall("chiseled_quartz_wall", Blocks.CHISELED_QUARTZ_BLOCK);
+    //public static final BlockItemRegistryHandle<Block> QUARTZ_BRICK_WALL = stoneWall("quartz_brick_wall", Blocks.QUARTZ_BRICKS);
+    //public static final BlockItemRegistryHandle<Block> SMOOTH_QUARTZ_WALL = stoneWall("smooth_quartz_wall", Blocks.SMOOTH_QUARTZ);
+//
+        // Prismarine Brick
+        // Dark Prismarine Brick
     // Cut Copper
 
     private static BlockItemRegistryHandle<Block> plankWall(String name) {
@@ -130,9 +133,11 @@ final public class ModBlocks {
                 properties -> new WallBlock(properties.strength(2.0F, 2.0F)));
     }
 
-    private static BlockItemRegistryHandle<Block> stoneWall(String name, Float destroyTime, Float explosionResistance) {
+    private static BlockItemRegistryHandle<Block> stoneWall(String name, Block baseBlock) {
         return Services.REGISTRY.registerBlockItem(name,
-                properties -> new WallBlock(properties.strength(destroyTime, explosionResistance).requiresCorrectToolForDrops()));
+                properties -> new WallBlock(properties
+                        .strength(baseBlock.defaultDestroyTime(), baseBlock.getExplosionResistance())
+                        .requiresCorrectToolForDrops()));
     }
 
     private static BlockItemRegistryHandle<Block> strippableWoodWall(String name, Supplier<? extends Block> strippedBlock) {

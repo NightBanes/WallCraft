@@ -48,16 +48,16 @@ public final class ModWallGenerator {
 
     /// Creates a wall using the side and top texture of the provided block
     public static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Block textureBlock) {
-        createLogWall(blockModels, wallBlock, TextureMapping.getBlockTexture(textureBlock), TextureMapping.getBlockTexture(textureBlock, "_top"));
+        createLogWall(blockModels, wallBlock, getSideTexture(textureBlock), TextureMapping.getBlockTexture(textureBlock, "_top"));
     }
 
     /// Creates a wall using the side and top texture of the provided blocks
     public static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Block sideTextureBlock, Block topTextureBlock) {
-        createLogWall(blockModels, wallBlock, TextureMapping.getBlockTexture(sideTextureBlock), TextureMapping.getBlockTexture(topTextureBlock, "_top"));
+        createLogWall(blockModels, wallBlock, getSideTexture(sideTextureBlock), TextureMapping.getBlockTexture(topTextureBlock, "_top"));
     }
 
-    /// Main function to create a wall using two testures
-    private static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Material sideMaterial, Material endMaterial) {
+    /// Main function to create a wall using two textures
+    public static void createLogWall(BlockModelGenerators blockModels, Block wallBlock, Material sideMaterial, Material endMaterial) {
         TextureMapping sideTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial);
         TextureMapping logTextureMapping = new TextureMapping().put(TextureSlot.WALL, sideMaterial).put(TextureSlot.END, endMaterial);
 
@@ -127,5 +127,19 @@ public final class ModWallGenerator {
         } catch (ReflectiveOperationException exception) {
             throw new IllegalStateException("Unable to register wall item model for " + block, exception);
         }
+    }
+
+    private static Material getSideTexture(Block textureBlock) {
+        Material texture = TextureMapping.getBlockTexture(textureBlock);
+        if(textureExists(texture.sprite())) {
+            return texture;
+        }
+
+        return TextureMapping.getBlockTexture(textureBlock, "_side");
+    }
+
+    private static boolean textureExists(Identifier texture) {
+        String resourcePath = "assets/" + texture.getNamespace() + "/textures/" + texture.getPath() + ".png";
+        return ModWallGenerator.class.getClassLoader().getResource(resourcePath) != null;
     }
 }

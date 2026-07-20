@@ -66,6 +66,9 @@
     "wallcraft:cut_sandstone_wall",
     "wallcraft:cut_red_sandstone_wall",
     "wallcraft:smooth_sandstone_wall",
-    "wallcraft:smooth_red_sandstone_wall"
+    "wallcraft:smooth_red_sandstone_wall",
+    "wallcraft:basalt_wall",
+    "wallcraft:smooth_basalt_wall",
+    "wallcraft:polished_basalt_wall"
   ]
 }

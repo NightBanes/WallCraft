@@ -104,6 +104,11 @@ public class ModModelProvider extends ModelProvider {
         ModWallGenerator.createWall(blockModels, ModBlocks.SMOOTH_SANDSTONE_WALL.block().get(), Identifier.withDefaultNamespace("block/sandstone_top"));
         ModWallGenerator.createWall(blockModels, ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get(), Identifier.withDefaultNamespace("block/red_sandstone_top"));
 
+        ModWallGenerator.createLogWall(blockModels, ModBlocks.BASALT_WALL.block().get(), Blocks.BASALT);
+        ModWallGenerator.createWall(blockModels, ModBlocks.SMOOTH_BASALT_WALL.block().get(), Blocks.SMOOTH_BASALT);
+        ModWallGenerator.createLogWall(blockModels, ModBlocks.POLISHED_BASALT_WALL.block().get(), Blocks.POLISHED_BASALT);
+
+
     }
 
 }

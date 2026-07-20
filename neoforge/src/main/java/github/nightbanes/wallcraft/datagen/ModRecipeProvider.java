@@ -193,24 +193,40 @@ public class ModRecipeProvider extends RecipeProvider {
         shapedWall(ModBlocks.CUT_RED_SANDSTONE_WALL.block().get(), Blocks.CUT_RED_SANDSTONE);
         shapedWall(ModBlocks.SMOOTH_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_SANDSTONE);
         shapedWall(ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_RED_SANDSTONE);
+        shapedWall(ModBlocks.BASALT_WALL.block().get(), Blocks.BASALT);
+        shapedWall(ModBlocks.SMOOTH_BASALT_WALL.block().get(), Blocks.SMOOTH_BASALT);
+        shapedWall(ModBlocks.POLISHED_BASALT_WALL.block().get(), Blocks.POLISHED_BASALT);
+
+        // Polished wall from Stone-type wall
+        shapedWallConverter(ModBlocks.POLISHED_GRANITE_WALL.block().get(), Blocks.GRANITE_WALL, 4);
+        shapedWallConverter(ModBlocks.POLISHED_DIORITE_WALL.block().get(), Blocks.DIORITE_WALL, 4);
+        shapedWallConverter(ModBlocks.POLISHED_ANDESITE_WALL.block().get(), Blocks.ANDESITE_WALL, 4);
+        shapedWallConverter(ModBlocks.POLISHED_BASALT_WALL.block().get(), ModBlocks.BASALT_WALL.block().get(), 4);
 
         // Stonecutter
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STONE_WALL.item().get(), Blocks.STONE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_WALL.block().get(), Blocks.GRANITE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_WALL.block().get(), Blocks.POLISHED_GRANITE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL.block().get(), Blocks.DIORITE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL.block().get(), Blocks.POLISHED_DIORITE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL.block().get(), Blocks.ANDESITE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL.block().get(), Blocks.POLISHED_ANDESITE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_WALL.block().get(), Blocks.SANDSTONE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_SANDSTONE_WALL.block().get(), Blocks.CUT_SANDSTONE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_WALL.block().get(), Blocks.RED_SANDSTONE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_RED_SANDSTONE_WALL.block().get(), Blocks.CUT_RED_SANDSTONE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_SANDSTONE);
         stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_RED_SANDSTONE_WALL.block().get(), Blocks.SMOOTH_RED_SANDSTONE);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BASALT_WALL.block().get(), Blocks.BASALT);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_BASALT_WALL.block().get(), Blocks.SMOOTH_BASALT);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BASALT_WALL.block().get(), Blocks.BASALT);
+        stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BASALT_WALL.block().get(), Blocks.POLISHED_BASALT);
 
         // Furnace
         oreSmelting(List.of(Blocks.COBBLESTONE_WALL), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.STONE_WALL.item().get(), 0.25f, 200, "stone_wall");
-        oreSmelting(List.of(Blocks.GRANITE_WALL), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.POLISHED_GRANITE_WALL.item().get(), 0.25f, 200, "granite_wall");
-        oreSmelting(List.of(Blocks.DIORITE_WALL), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.POLISHED_DIORITE_WALL.item().get(), 0.25f, 200, "diorite_wall");
-        oreSmelting(List.of(Blocks.ANDESITE_WALL), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL.item().get(), 0.25f, 200, "andesite_wall");
         oreSmelting(List.of(Blocks.SANDSTONE_WALL), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.SMOOTH_SANDSTONE_WALL.item().get(), 0.25f, 200, "sandstone_wall");
         oreSmelting(List.of(Blocks.RED_SANDSTONE_WALL), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.SMOOTH_RED_SANDSTONE_WALL.item().get(), 0.25f, 200, "red_sandstone_wall");
+        oreSmelting(List.of(ModBlocks.BASALT_WALL.block().get()), RecipeCategory.BUILDING_BLOCKS, CookingBookCategory.BLOCKS, ModBlocks.SMOOTH_BASALT_WALL.item().get(), 0.25f, 200, "basalt_wall");
 
         // Trapdoors from slabs
         shapedTrapdoor(Blocks.OAK_TRAPDOOR, Items.OAK_SLAB);

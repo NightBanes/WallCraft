@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diorite_wall": {
+    "has_basalt_wall": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diorite_wall"
+            "items": "wallcraft:basalt_wall"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polished_diorite_wall_from_smelting_diorite_wall"
+        "recipe": "wallcraft:polished_basalt_wall_from_basalt_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diorite_wall"
+      "has_basalt_wall"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polished_diorite_wall_from_smelting_diorite_wall"
+      "wallcraft:polished_basalt_wall_from_basalt_wall"
     ]
   }
 }

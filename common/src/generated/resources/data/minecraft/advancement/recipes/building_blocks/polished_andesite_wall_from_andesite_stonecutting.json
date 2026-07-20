@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_andesite_wall": {
+    "has_andesite": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:andesite_wall"
+            "items": "minecraft:andesite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:polished_andesite_wall_from_smelting_andesite_wall"
+        "recipe": "minecraft:polished_andesite_wall_from_andesite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_andesite_wall"
+      "has_andesite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:polished_andesite_wall_from_smelting_andesite_wall"
+      "minecraft:polished_andesite_wall_from_andesite_stonecutting"
     ]
   }
 }

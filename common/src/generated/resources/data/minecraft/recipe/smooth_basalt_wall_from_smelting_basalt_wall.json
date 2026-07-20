@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.25,
+  "group": "basalt_wall",
+  "ingredient": "wallcraft:basalt_wall",
+  "result": {
+    "id": "wallcraft:smooth_basalt_wall"
+  }
+}
